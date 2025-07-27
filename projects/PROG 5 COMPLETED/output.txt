@@ -1,0 +1,3755 @@
+Welcome to the Backtracking Word Search Test Program
+Output file: output.txt
+
+
+Number of rows(4) and number of columns(8) is valid.
+WARNING: Uppercase letter in table input: 'T' in position [0][4]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'E' in position [0][5]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'S' in position [0][6]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [0][7]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [1][0]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [1][4]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'E' in position [1][5]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'S' in position [1][6]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [1][7]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [3][0]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'S' in position [3][2]. Converted to lowercase...
+Test character table loaded successfully...Test table:
+
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Testing Default Scenario...searching for words/phrases:
+'test' and 'TEST', 'test test', 'Test TEST', and 'test negative'.
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: SUCCESS!: 'test' found!
+Phrase Coordinates for: 'test'.
+word coordinate: test: <0,0> to <0,3>.
+End coordinates.
+Phrase Found Table for: 'test':
+
+T E S T t e s t 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: SUCCESS!: 'test' found!
+Phrase Coordinates for: 'test'.
+word coordinate: test: <0,0> to <0,3>.
+End coordinates.
+Phrase Found Table for: 'test':
+
+T E S T t e s t 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: currPos<right>: (0,4).
+search: right: 't' found at (0,4).
+search: right: 'e' found at (0,5).
+search: right: 's' found at (0,6).
+search: right: 't' found at (0,7).
+search: <test> found.
+search: SUCCESS!: 'test test' found!
+Phrase Coordinates for: 'test test'.
+word coordinate: test: <0,0> to <0,3>.
+word coordinate: test: <0,4> to <0,7>.
+End coordinates.
+Phrase Found Table for: 'test test':
+
+T E S T T E S T 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: currPos<right>: (0,4).
+search: right: 't' found at (0,4).
+search: right: 'e' found at (0,5).
+search: right: 's' found at (0,6).
+search: right: 't' found at (0,7).
+search: <test> found.
+search: SUCCESS!: 'test test' found!
+Phrase Coordinates for: 'test test'.
+word coordinate: test: <0,0> to <0,3>.
+word coordinate: test: <0,4> to <0,7>.
+End coordinates.
+Phrase Found Table for: 'test test':
+
+T E S T T E S T 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: currPos<right>: (0,4).
+search: ...backtracking: (0,3).
+search: currPos<down>: (1,3).
+search: ...backtracking: (0,3).
+search: currPos<left>: (0,2).
+search: ...backtracking: (0,3).
+search: currPos<up>: (-1,3).
+search: ...backtracking: (0,3).
+search: currPos<down>: (1,0).
+search: ...backtracking: (0,0).
+search: currPos<left>: (0,-1).
+search: ...backtracking: (0,0).
+search: currPos<up>: (-1,0).
+search: ...backtracking: (0,0).
+search: currPos: (0,1): 't' not found.
+search: currPos: (0,2): 't' not found.
+search: currPos: (0,3): 't' found.
+search: currPos<right>: (0,4).
+search: ...backtracking: (0,3).
+search: currPos<down>: (1,3).
+search: ...backtracking: (0,3).
+search: currPos<left>: (0,2).
+search: ...backtracking: (0,3).
+search: currPos<up>: (-1,3).
+search: ...backtracking: (0,3).
+search: currPos: (0,4): 't' found.
+search: currPos<right>: (0,5).
+search: right: 'e' found at (0,5).
+search: right: 's' found at (0,6).
+search: right: 't' found at (0,7).
+search: <test> found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: ...backtracking: (0,7).
+search: currPos<left>: (0,6).
+search: ...backtracking: (0,7).
+search: currPos<up>: (-1,7).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,4).
+search: ...backtracking: (0,4).
+search: currPos<left>: (0,3).
+search: ...backtracking: (0,4).
+search: currPos<up>: (-1,4).
+search: ...backtracking: (0,4).
+search: currPos: (0,5): 't' not found.
+search: currPos: (0,6): 't' not found.
+search: currPos: (0,7): 't' found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: ...backtracking: (0,7).
+search: currPos<left>: (0,6).
+search: ...backtracking: (0,7).
+search: currPos<up>: (-1,7).
+search: ...backtracking: (0,7).
+search: currPos: (1,0): 't' found.
+search: currPos<right>: (1,1).
+search: right: 'e' found at (1,1).
+search: right: 's' found at (1,2).
+search: right: 't' found at (1,3).
+search: <test> found.
+search: currPos<right>: (1,4).
+search: ...backtracking: (1,3).
+search: currPos<down>: (2,3).
+search: ...backtracking: (1,3).
+search: currPos<left>: (1,2).
+search: ...backtracking: (1,3).
+search: currPos<up>: (0,3).
+search: ...backtracking: (1,3).
+search: currPos<down>: (2,0).
+search: ...backtracking: (1,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos: (1,1): 't' not found.
+search: currPos: (1,2): 't' not found.
+search: currPos: (1,3): 't' found.
+search: currPos<right>: (1,4).
+search: ...backtracking: (1,3).
+search: currPos<down>: (2,3).
+search: ...backtracking: (1,3).
+search: currPos<left>: (1,2).
+search: ...backtracking: (1,3).
+search: currPos<up>: (0,3).
+search: ...backtracking: (1,3).
+search: currPos: (1,4): 't' found.
+search: currPos<right>: (1,5).
+search: right: 'e' found at (1,5).
+search: right: 's' found at (1,6).
+search: right: 't' found at (1,7).
+search: <test> found.
+search: currPos<right>: (1,8).
+search: ...backtracking: (1,7).
+search: currPos<down>: (2,7).
+search: ...backtracking: (1,7).
+search: currPos<left>: (1,6).
+search: ...backtracking: (1,7).
+search: currPos<up>: (0,7).
+search: ...backtracking: (1,7).
+search: currPos<down>: (2,4).
+search: ...backtracking: (1,4).
+search: currPos<left>: (1,3).
+search: ...backtracking: (1,4).
+search: currPos<up>: (0,4).
+search: ...backtracking: (1,4).
+search: currPos: (1,5): 't' not found.
+search: currPos: (1,6): 't' not found.
+search: currPos: (1,7): 't' found.
+search: currPos<right>: (1,8).
+search: ...backtracking: (1,7).
+search: currPos<down>: (2,7).
+search: ...backtracking: (1,7).
+search: currPos<left>: (1,6).
+search: ...backtracking: (1,7).
+search: currPos<up>: (0,7).
+search: ...backtracking: (1,7).
+search: currPos: (2,0): 't' found.
+search: currPos<right>: (2,1).
+search: right: 'e' found at (2,1).
+search: right: 's' found at (2,2).
+search: right: 't' found at (2,3).
+search: <test> found.
+search: currPos<right>: (2,4).
+search: ...backtracking: (2,3).
+search: currPos<down>: (3,3).
+search: ...backtracking: (2,3).
+search: currPos<left>: (2,2).
+search: ...backtracking: (2,3).
+search: currPos<up>: (1,3).
+search: ...backtracking: (2,3).
+search: currPos<down>: (3,0).
+search: ...backtracking: (2,0).
+search: currPos<left>: (2,-1).
+search: ...backtracking: (2,0).
+search: currPos<up>: (1,0).
+search: ...backtracking: (2,0).
+search: currPos: (2,1): 't' not found.
+search: currPos: (2,2): 't' not found.
+search: currPos: (2,3): 't' found.
+search: currPos<right>: (2,4).
+search: ...backtracking: (2,3).
+search: currPos<down>: (3,3).
+search: ...backtracking: (2,3).
+search: currPos<left>: (2,2).
+search: ...backtracking: (2,3).
+search: currPos<up>: (1,3).
+search: ...backtracking: (2,3).
+search: currPos: (2,4): 't' found.
+search: currPos<right>: (2,5).
+search: right: 'e' found at (2,5).
+search: right: 's' found at (2,6).
+search: right: 't' found at (2,7).
+search: <test> found.
+search: currPos<right>: (2,8).
+search: ...backtracking: (2,7).
+search: currPos<down>: (3,7).
+search: ...backtracking: (2,7).
+search: currPos<left>: (2,6).
+search: ...backtracking: (2,7).
+search: currPos<up>: (1,7).
+search: ...backtracking: (2,7).
+search: currPos<down>: (3,4).
+search: ...backtracking: (2,4).
+search: currPos<left>: (2,3).
+search: ...backtracking: (2,4).
+search: currPos<up>: (1,4).
+search: ...backtracking: (2,4).
+search: currPos: (2,5): 't' not found.
+search: currPos: (2,6): 't' not found.
+search: currPos: (2,7): 't' found.
+search: currPos<right>: (2,8).
+search: ...backtracking: (2,7).
+search: currPos<down>: (3,7).
+search: ...backtracking: (2,7).
+search: currPos<left>: (2,6).
+search: ...backtracking: (2,7).
+search: currPos<up>: (1,7).
+search: ...backtracking: (2,7).
+search: currPos: (3,0): 't' found.
+search: currPos<right>: (3,1).
+search: right: 'e' found at (3,1).
+search: right: 's' found at (3,2).
+search: right: 't' found at (3,3).
+search: <test> found.
+search: currPos<right>: (3,4).
+search: ...backtracking: (3,3).
+search: currPos<down>: (4,3).
+search: ...backtracking: (3,3).
+search: currPos<left>: (3,2).
+search: ...backtracking: (3,3).
+search: currPos<up>: (2,3).
+search: ...backtracking: (3,3).
+search: currPos<down>: (4,0).
+search: ...backtracking: (3,0).
+search: currPos<left>: (3,-1).
+search: ...backtracking: (3,0).
+search: currPos<up>: (2,0).
+search: ...backtracking: (3,0).
+search: currPos: (3,1): 't' not found.
+search: currPos: (3,2): 't' not found.
+search: currPos: (3,3): 't' found.
+search: currPos<right>: (3,4).
+search: ...backtracking: (3,3).
+search: currPos<down>: (4,3).
+search: ...backtracking: (3,3).
+search: currPos<left>: (3,2).
+search: ...backtracking: (3,3).
+search: currPos<up>: (2,3).
+search: ...backtracking: (3,3).
+search: currPos: (3,4): 't' found.
+search: currPos<right>: (3,5).
+search: right: 'e' found at (3,5).
+search: right: 's' found at (3,6).
+search: right: 't' found at (3,7).
+search: <test> found.
+search: currPos<right>: (3,8).
+search: ...backtracking: (3,7).
+search: currPos<down>: (4,7).
+search: ...backtracking: (3,7).
+search: currPos<left>: (3,6).
+search: ...backtracking: (3,7).
+search: currPos<up>: (2,7).
+search: ...backtracking: (3,7).
+search: currPos<down>: (4,4).
+search: ...backtracking: (3,4).
+search: currPos<left>: (3,3).
+search: ...backtracking: (3,4).
+search: currPos<up>: (2,4).
+search: ...backtracking: (3,4).
+search: currPos: (3,5): 't' not found.
+search: currPos: (3,6): 't' not found.
+search: currPos: (3,7): 't' found.
+search: currPos<right>: (3,8).
+search: ...backtracking: (3,7).
+search: currPos<down>: (4,7).
+search: ...backtracking: (3,7).
+search: currPos<left>: (3,6).
+search: ...backtracking: (3,7).
+search: currPos<up>: (2,7).
+search: ...backtracking: (3,7).
+search: FAILED!: 'test negative' not found!
+Default Test Scenario completed: success...
+
+File name for user input character table: req6.dat
+Input file openend successfully...attempting to build table...
+
+
+Number of rows(10) and number of columns(10) is valid.
+User input file 10x10 table loaded successfully...Program Launch Success - ready to search words.
+User table:
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: abstract data types are really neat
+Search word/phrase is valid. Number of words in phrase is: 6
+Start search at (0,0).
+search: currPos: (0,0): 'a' found.
+search: currPos<right>: (0,1).
+search: right: 'b' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: right: 'r' found at (0,4).
+search: right: 'a' found at (0,5).
+search: right: 'c' found at (0,6).
+search: right: 't' found at (0,7).
+search: <abstract> found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: ...backtracking: (0,7).
+search: currPos<left>: (0,6).
+search: ...backtracking: (0,7).
+search: currPos<up>: (-1,7).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,0).
+search: ...backtracking: (0,0).
+search: currPos<left>: (0,-1).
+search: ...backtracking: (0,0).
+search: currPos<up>: (-1,0).
+search: ...backtracking: (0,0).
+search: currPos: (0,1): 'a' not found.
+search: currPos: (0,2): 'a' not found.
+search: currPos: (0,3): 'a' not found.
+search: currPos: (0,4): 'a' not found.
+search: currPos: (0,5): 'a' found.
+search: currPos<right>: (0,6).
+search: ...backtracking: (0,5).
+search: currPos<down>: (1,5).
+search: ...backtracking: (0,5).
+search: currPos<left>: (0,4).
+search: ...backtracking: (0,5).
+search: currPos<up>: (-1,5).
+search: ...backtracking: (0,5).
+search: currPos: (0,6): 'a' not found.
+search: currPos: (0,7): 'a' not found.
+search: currPos: (0,8): 'a' not found.
+search: currPos: (0,9): 'a' not found.
+search: currPos: (1,0): 'a' found.
+search: currPos<right>: (1,1).
+search: ...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: ...backtracking: (1,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos: (1,1): 'a' not found.
+search: currPos: (1,2): 'a' found.
+search: currPos<right>: (1,3).
+search: ...backtracking: (1,2).
+search: currPos<down>: (2,2).
+search: ...backtracking: (1,2).
+search: currPos<left>: (1,1).
+search: ...backtracking: (1,2).
+search: currPos<up>: (0,2).
+search: ...backtracking: (1,2).
+search: currPos: (1,3): 'a' not found.
+search: currPos: (1,4): 'a' not found.
+search: currPos: (1,5): 'a' not found.
+search: currPos: (1,6): 'a' found.
+search: currPos<right>: (1,7).
+search: ...backtracking: (1,6).
+search: currPos<down>: (2,6).
+search: ...backtracking: (1,6).
+search: currPos<left>: (1,5).
+search: ...backtracking: (1,6).
+search: currPos<up>: (0,6).
+search: ...backtracking: (1,6).
+search: currPos: (1,7): 'a' not found.
+search: currPos: (1,8): 'a' found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: ...backtracking: (1,8).
+search: currPos<left>: (1,7).
+search: ...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos: (1,9): 'a' not found.
+search: currPos: (2,0): 'a' not found.
+search: currPos: (2,1): 'a' not found.
+search: currPos: (2,2): 'a' not found.
+search: currPos: (2,3): 'a' not found.
+search: currPos: (2,4): 'a' not found.
+search: currPos: (2,5): 'a' found.
+search: currPos<right>: (2,6).
+search: ...backtracking: (2,5).
+search: currPos<down>: (3,5).
+search: ...backtracking: (2,5).
+search: currPos<left>: (2,4).
+search: ...backtracking: (2,5).
+search: currPos<up>: (1,5).
+search: ...backtracking: (2,5).
+search: currPos: (2,6): 'a' not found.
+search: currPos: (2,7): 'a' not found.
+search: currPos: (2,8): 'a' not found.
+search: currPos: (2,9): 'a' not found.
+search: currPos: (3,0): 'a' not found.
+search: currPos: (3,1): 'a' not found.
+search: currPos: (3,2): 'a' not found.
+search: currPos: (3,3): 'a' not found.
+search: currPos: (3,4): 'a' found.
+search: currPos<right>: (3,5).
+search: ...backtracking: (3,4).
+search: currPos<down>: (4,4).
+search: ...backtracking: (3,4).
+search: currPos<left>: (3,3).
+search: ...backtracking: (3,4).
+search: currPos<up>: (2,4).
+search: ...backtracking: (3,4).
+search: currPos: (3,5): 'a' not found.
+search: currPos: (3,6): 'a' not found.
+search: currPos: (3,7): 'a' not found.
+search: currPos: (3,8): 'a' not found.
+search: currPos: (3,9): 'a' not found.
+search: currPos: (4,0): 'a' not found.
+search: currPos: (4,1): 'a' not found.
+search: currPos: (4,2): 'a' not found.
+search: currPos: (4,3): 'a' not found.
+search: currPos: (4,4): 'a' not found.
+search: currPos: (4,5): 'a' found.
+search: currPos<right>: (4,6).
+search: ...backtracking: (4,5).
+search: currPos<down>: (5,5).
+search: ...backtracking: (4,5).
+search: currPos<left>: (4,4).
+search: ...backtracking: (4,5).
+search: currPos<up>: (3,5).
+search: ...backtracking: (4,5).
+search: currPos: (4,6): 'a' not found.
+search: currPos: (4,7): 'a' not found.
+search: currPos: (4,8): 'a' not found.
+search: currPos: (4,9): 'a' not found.
+search: currPos: (5,0): 'a' not found.
+search: currPos: (5,1): 'a' not found.
+search: currPos: (5,2): 'a' not found.
+search: currPos: (5,3): 'a' not found.
+search: currPos: (5,4): 'a' not found.
+search: currPos: (5,5): 'a' not found.
+search: currPos: (5,6): 'a' not found.
+search: currPos: (5,7): 'a' not found.
+search: currPos: (5,8): 'a' not found.
+search: currPos: (5,9): 'a' not found.
+search: currPos: (6,0): 'a' not found.
+search: currPos: (6,1): 'a' found.
+search: currPos<right>: (6,2).
+search: ...backtracking: (6,1).
+search: currPos<down>: (7,1).
+search: ...backtracking: (6,1).
+search: currPos<left>: (6,0).
+search: ...backtracking: (6,1).
+search: currPos<up>: (5,1).
+search: up: 'b' found at (5,1).
+search: ...backtracking: (6,1).
+search: currPos: (6,2): 'a' not found.
+search: currPos: (6,3): 'a' not found.
+search: currPos: (6,4): 'a' not found.
+search: currPos: (6,5): 'a' not found.
+search: currPos: (6,6): 'a' found.
+search: currPos<right>: (6,7).
+search: ...backtracking: (6,6).
+search: currPos<down>: (7,6).
+search: ...backtracking: (6,6).
+search: currPos<left>: (6,5).
+search: ...backtracking: (6,6).
+search: currPos<up>: (5,6).
+search: ...backtracking: (6,6).
+search: currPos: (6,7): 'a' not found.
+search: currPos: (6,8): 'a' not found.
+search: currPos: (6,9): 'a' not found.
+search: currPos: (7,0): 'a' found.
+search: currPos<right>: (7,1).
+search: ...backtracking: (7,0).
+search: currPos<down>: (8,0).
+search: ...backtracking: (7,0).
+search: currPos<left>: (7,-1).
+search: ...backtracking: (7,0).
+search: currPos<up>: (6,0).
+search: ...backtracking: (7,0).
+search: currPos: (7,1): 'a' not found.
+search: currPos: (7,2): 'a' not found.
+search: currPos: (7,3): 'a' not found.
+search: currPos: (7,4): 'a' not found.
+search: currPos: (7,5): 'a' not found.
+search: currPos: (7,6): 'a' not found.
+search: currPos: (7,7): 'a' not found.
+search: currPos: (7,8): 'a' found.
+search: currPos<right>: (7,9).
+search: ...backtracking: (7,8).
+search: currPos<down>: (8,8).
+search: ...backtracking: (7,8).
+search: currPos<left>: (7,7).
+search: ...backtracking: (7,8).
+search: currPos<up>: (6,8).
+search: ...backtracking: (7,8).
+search: currPos: (7,9): 'a' not found.
+search: currPos: (8,0): 'a' not found.
+search: currPos: (8,1): 'a' not found.
+search: currPos: (8,2): 'a' not found.
+search: currPos: (8,3): 'a' not found.
+search: currPos: (8,4): 'a' found.
+search: currPos<right>: (8,5).
+search: ...backtracking: (8,4).
+search: currPos<down>: (9,4).
+search: ...backtracking: (8,4).
+search: currPos<left>: (8,3).
+search: ...backtracking: (8,4).
+search: currPos<up>: (7,4).
+search: up: 'b' found at (7,4).
+search: up: 's' found at (6,4).
+search: up: 't' found at (5,4).
+search: up: 'r' found at (4,4).
+search: up: 'a' found at (3,4).
+search: up: 'c' found at (2,4).
+search: up: 't' found at (1,4).
+search: <abstract> found.
+search: currPos<right>: (1,5).
+search: right: 'd' found at (1,5).
+search: right: 'a' found at (1,6).
+search: right: 't' found at (1,7).
+search: right: 'a' found at (1,8).
+search: <data> found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: down: 't' found at (2,8).
+search: down: 'y' found at (3,8).
+search: down: 'p' found at (4,8).
+search: down: 'e' found at (5,8).
+search: down: 's' found at (6,8).
+search: <types> found.
+search: currPos<right>: (6,9).
+search: ...backtracking: (6,8).
+search: currPos<down>: (7,8).
+search: down: 'a' found at (7,8).
+search: down: 'r' found at (8,8).
+search: down: 'e' found at (9,8).
+search: <are> found.
+search: currPos<right>: (9,9).
+search: ...backtracking: (9,8).
+search: currPos<down>: (10,8).
+search: ...backtracking: (9,8).
+search: currPos<left>: (9,7).
+search: left: 'r' found at (9,7).
+search: ...backtracking: (9,8).
+search: currPos<up>: (8,8).
+search: up: 'r' found at (8,8).
+search: overlap...backtracking: (9,8).
+search: currPos<left>: (6,7).
+search: ...backtracking: (6,8).
+search: currPos<up>: (5,8).
+search: ...backtracking: (6,8).
+search: currPos<left>: (1,7).
+search: left: 't' found at (1,7).
+search: overlap...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,4).
+search: ...backtracking: (1,4).
+search: currPos<left>: (1,3).
+search: left: 'd' found at (1,3).
+search: left: 'a' found at (1,2).
+search: left: 't' found at (1,1).
+search: left: 'a' found at (1,0).
+search: <data> found.
+search: currPos<right>: (1,1).
+search: right: 't' found at (1,1).
+search: overlap...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: down: 't' found at (2,0).
+search: down: 'y' found at (3,0).
+search: down: 'p' found at (4,0).
+search: down: 'e' found at (5,0).
+search: down: 's' found at (6,0).
+search: <types> found.
+search: currPos<right>: (6,1).
+search: right: 'a' found at (6,1).
+search: right: 'r' found at (6,2).
+search: right: 'e' found at (6,3).
+search: <are> found.
+search: currPos<right>: (6,4).
+search: ...backtracking: (6,3).
+search: currPos<down>: (7,3).
+search: ...backtracking: (6,3).
+search: currPos<left>: (6,2).
+search: left: 'r' found at (6,2).
+search: overlap...backtracking: (6,3).
+search: currPos<up>: (5,3).
+search: ...backtracking: (6,3).
+search: currPos<down>: (7,0).
+search: down: 'a' found at (7,0).
+search: down: 'r' found at (8,0).
+search: down: 'e' found at (9,0).
+search: <are> found.
+search: currPos<right>: (9,1).
+search: right: 'r' found at (9,1).
+search: right: 'e' found at (9,2).
+search: right: 'a' found at (9,3).
+search: right: 'l' found at (9,4).
+search: right: 'l' found at (9,5).
+search: right: 'y' found at (9,6).
+search: <really> found.
+search: currPos<right>: (9,7).
+search: ...backtracking: (9,6).
+search: currPos<down>: (10,6).
+search: ...backtracking: (9,6).
+search: currPos<left>: (9,5).
+search: ...backtracking: (9,6).
+search: currPos<up>: (8,6).
+search: up: 'n' found at (8,6).
+search: up: 'e' found at (7,6).
+search: up: 'a' found at (6,6).
+search: up: 't' found at (5,6).
+search: <neat> found.
+search: SUCCESS!: 'abstract data types are really neat' found!
+Phrase Coordinates for: 'abstract data types are really neat'.
+word coordinate: abstract: <8,4> to <1,4>.
+word coordinate: data: <1,3> to <1,0>.
+word coordinate: types: <2,0> to <6,0>.
+word coordinate: are: <7,0> to <9,0>.
+word coordinate: really: <9,1> to <9,6>.
+word coordinate: neat: <8,6> to <5,6>.
+End coordinates.
+Phrase Found Table for: 'abstract data types are really neat':
+
+a b s t r a c t i j 
+A T A D T d a t a j 
+T b c d C a g h t j 
+Y b c d A t g h y j 
+P b c d R a g h p j 
+E b c d T f T h e j 
+S a r e S f A h s j 
+A r e d B f E h a j 
+R b c d A f N h r j 
+E R E A L L Y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: abstract data types are really neat he sar
+Search word/phrase is valid. Number of words in phrase is: 8
+Start search at (0,0).
+search: currPos: (0,0): 'a' found.
+search: currPos<right>: (0,1).
+search: right: 'b' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: right: 'r' found at (0,4).
+search: right: 'a' found at (0,5).
+search: right: 'c' found at (0,6).
+search: right: 't' found at (0,7).
+search: <abstract> found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: ...backtracking: (0,7).
+search: currPos<left>: (0,6).
+search: ...backtracking: (0,7).
+search: currPos<up>: (-1,7).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,0).
+search: ...backtracking: (0,0).
+search: currPos<left>: (0,-1).
+search: ...backtracking: (0,0).
+search: currPos<up>: (-1,0).
+search: ...backtracking: (0,0).
+search: currPos: (0,1): 'a' not found.
+search: currPos: (0,2): 'a' not found.
+search: currPos: (0,3): 'a' not found.
+search: currPos: (0,4): 'a' not found.
+search: currPos: (0,5): 'a' found.
+search: currPos<right>: (0,6).
+search: ...backtracking: (0,5).
+search: currPos<down>: (1,5).
+search: ...backtracking: (0,5).
+search: currPos<left>: (0,4).
+search: ...backtracking: (0,5).
+search: currPos<up>: (-1,5).
+search: ...backtracking: (0,5).
+search: currPos: (0,6): 'a' not found.
+search: currPos: (0,7): 'a' not found.
+search: currPos: (0,8): 'a' not found.
+search: currPos: (0,9): 'a' not found.
+search: currPos: (1,0): 'a' found.
+search: currPos<right>: (1,1).
+search: ...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: ...backtracking: (1,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos: (1,1): 'a' not found.
+search: currPos: (1,2): 'a' found.
+search: currPos<right>: (1,3).
+search: ...backtracking: (1,2).
+search: currPos<down>: (2,2).
+search: ...backtracking: (1,2).
+search: currPos<left>: (1,1).
+search: ...backtracking: (1,2).
+search: currPos<up>: (0,2).
+search: ...backtracking: (1,2).
+search: currPos: (1,3): 'a' not found.
+search: currPos: (1,4): 'a' not found.
+search: currPos: (1,5): 'a' not found.
+search: currPos: (1,6): 'a' found.
+search: currPos<right>: (1,7).
+search: ...backtracking: (1,6).
+search: currPos<down>: (2,6).
+search: ...backtracking: (1,6).
+search: currPos<left>: (1,5).
+search: ...backtracking: (1,6).
+search: currPos<up>: (0,6).
+search: ...backtracking: (1,6).
+search: currPos: (1,7): 'a' not found.
+search: currPos: (1,8): 'a' found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: ...backtracking: (1,8).
+search: currPos<left>: (1,7).
+search: ...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos: (1,9): 'a' not found.
+search: currPos: (2,0): 'a' not found.
+search: currPos: (2,1): 'a' not found.
+search: currPos: (2,2): 'a' not found.
+search: currPos: (2,3): 'a' not found.
+search: currPos: (2,4): 'a' not found.
+search: currPos: (2,5): 'a' found.
+search: currPos<right>: (2,6).
+search: ...backtracking: (2,5).
+search: currPos<down>: (3,5).
+search: ...backtracking: (2,5).
+search: currPos<left>: (2,4).
+search: ...backtracking: (2,5).
+search: currPos<up>: (1,5).
+search: ...backtracking: (2,5).
+search: currPos: (2,6): 'a' not found.
+search: currPos: (2,7): 'a' not found.
+search: currPos: (2,8): 'a' not found.
+search: currPos: (2,9): 'a' not found.
+search: currPos: (3,0): 'a' not found.
+search: currPos: (3,1): 'a' not found.
+search: currPos: (3,2): 'a' not found.
+search: currPos: (3,3): 'a' not found.
+search: currPos: (3,4): 'a' found.
+search: currPos<right>: (3,5).
+search: ...backtracking: (3,4).
+search: currPos<down>: (4,4).
+search: ...backtracking: (3,4).
+search: currPos<left>: (3,3).
+search: ...backtracking: (3,4).
+search: currPos<up>: (2,4).
+search: ...backtracking: (3,4).
+search: currPos: (3,5): 'a' not found.
+search: currPos: (3,6): 'a' not found.
+search: currPos: (3,7): 'a' not found.
+search: currPos: (3,8): 'a' not found.
+search: currPos: (3,9): 'a' not found.
+search: currPos: (4,0): 'a' not found.
+search: currPos: (4,1): 'a' not found.
+search: currPos: (4,2): 'a' not found.
+search: currPos: (4,3): 'a' not found.
+search: currPos: (4,4): 'a' not found.
+search: currPos: (4,5): 'a' found.
+search: currPos<right>: (4,6).
+search: ...backtracking: (4,5).
+search: currPos<down>: (5,5).
+search: ...backtracking: (4,5).
+search: currPos<left>: (4,4).
+search: ...backtracking: (4,5).
+search: currPos<up>: (3,5).
+search: ...backtracking: (4,5).
+search: currPos: (4,6): 'a' not found.
+search: currPos: (4,7): 'a' not found.
+search: currPos: (4,8): 'a' not found.
+search: currPos: (4,9): 'a' not found.
+search: currPos: (5,0): 'a' not found.
+search: currPos: (5,1): 'a' not found.
+search: currPos: (5,2): 'a' not found.
+search: currPos: (5,3): 'a' not found.
+search: currPos: (5,4): 'a' not found.
+search: currPos: (5,5): 'a' not found.
+search: currPos: (5,6): 'a' not found.
+search: currPos: (5,7): 'a' not found.
+search: currPos: (5,8): 'a' not found.
+search: currPos: (5,9): 'a' not found.
+search: currPos: (6,0): 'a' not found.
+search: currPos: (6,1): 'a' found.
+search: currPos<right>: (6,2).
+search: ...backtracking: (6,1).
+search: currPos<down>: (7,1).
+search: ...backtracking: (6,1).
+search: currPos<left>: (6,0).
+search: ...backtracking: (6,1).
+search: currPos<up>: (5,1).
+search: up: 'b' found at (5,1).
+search: ...backtracking: (6,1).
+search: currPos: (6,2): 'a' not found.
+search: currPos: (6,3): 'a' not found.
+search: currPos: (6,4): 'a' not found.
+search: currPos: (6,5): 'a' not found.
+search: currPos: (6,6): 'a' found.
+search: currPos<right>: (6,7).
+search: ...backtracking: (6,6).
+search: currPos<down>: (7,6).
+search: ...backtracking: (6,6).
+search: currPos<left>: (6,5).
+search: ...backtracking: (6,6).
+search: currPos<up>: (5,6).
+search: ...backtracking: (6,6).
+search: currPos: (6,7): 'a' not found.
+search: currPos: (6,8): 'a' not found.
+search: currPos: (6,9): 'a' not found.
+search: currPos: (7,0): 'a' found.
+search: currPos<right>: (7,1).
+search: ...backtracking: (7,0).
+search: currPos<down>: (8,0).
+search: ...backtracking: (7,0).
+search: currPos<left>: (7,-1).
+search: ...backtracking: (7,0).
+search: currPos<up>: (6,0).
+search: ...backtracking: (7,0).
+search: currPos: (7,1): 'a' not found.
+search: currPos: (7,2): 'a' not found.
+search: currPos: (7,3): 'a' not found.
+search: currPos: (7,4): 'a' not found.
+search: currPos: (7,5): 'a' not found.
+search: currPos: (7,6): 'a' not found.
+search: currPos: (7,7): 'a' not found.
+search: currPos: (7,8): 'a' found.
+search: currPos<right>: (7,9).
+search: ...backtracking: (7,8).
+search: currPos<down>: (8,8).
+search: ...backtracking: (7,8).
+search: currPos<left>: (7,7).
+search: ...backtracking: (7,8).
+search: currPos<up>: (6,8).
+search: ...backtracking: (7,8).
+search: currPos: (7,9): 'a' not found.
+search: currPos: (8,0): 'a' not found.
+search: currPos: (8,1): 'a' not found.
+search: currPos: (8,2): 'a' not found.
+search: currPos: (8,3): 'a' not found.
+search: currPos: (8,4): 'a' found.
+search: currPos<right>: (8,5).
+search: ...backtracking: (8,4).
+search: currPos<down>: (9,4).
+search: ...backtracking: (8,4).
+search: currPos<left>: (8,3).
+search: ...backtracking: (8,4).
+search: currPos<up>: (7,4).
+search: up: 'b' found at (7,4).
+search: up: 's' found at (6,4).
+search: up: 't' found at (5,4).
+search: up: 'r' found at (4,4).
+search: up: 'a' found at (3,4).
+search: up: 'c' found at (2,4).
+search: up: 't' found at (1,4).
+search: <abstract> found.
+search: currPos<right>: (1,5).
+search: right: 'd' found at (1,5).
+search: right: 'a' found at (1,6).
+search: right: 't' found at (1,7).
+search: right: 'a' found at (1,8).
+search: <data> found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: down: 't' found at (2,8).
+search: down: 'y' found at (3,8).
+search: down: 'p' found at (4,8).
+search: down: 'e' found at (5,8).
+search: down: 's' found at (6,8).
+search: <types> found.
+search: currPos<right>: (6,9).
+search: ...backtracking: (6,8).
+search: currPos<down>: (7,8).
+search: down: 'a' found at (7,8).
+search: down: 'r' found at (8,8).
+search: down: 'e' found at (9,8).
+search: <are> found.
+search: currPos<right>: (9,9).
+search: ...backtracking: (9,8).
+search: currPos<down>: (10,8).
+search: ...backtracking: (9,8).
+search: currPos<left>: (9,7).
+search: left: 'r' found at (9,7).
+search: ...backtracking: (9,8).
+search: currPos<up>: (8,8).
+search: up: 'r' found at (8,8).
+search: overlap...backtracking: (9,8).
+search: currPos<left>: (6,7).
+search: ...backtracking: (6,8).
+search: currPos<up>: (5,8).
+search: ...backtracking: (6,8).
+search: currPos<left>: (1,7).
+search: left: 't' found at (1,7).
+search: overlap...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,4).
+search: ...backtracking: (1,4).
+search: currPos<left>: (1,3).
+search: left: 'd' found at (1,3).
+search: left: 'a' found at (1,2).
+search: left: 't' found at (1,1).
+search: left: 'a' found at (1,0).
+search: <data> found.
+search: currPos<right>: (1,1).
+search: right: 't' found at (1,1).
+search: overlap...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: down: 't' found at (2,0).
+search: down: 'y' found at (3,0).
+search: down: 'p' found at (4,0).
+search: down: 'e' found at (5,0).
+search: down: 's' found at (6,0).
+search: <types> found.
+search: currPos<right>: (6,1).
+search: right: 'a' found at (6,1).
+search: right: 'r' found at (6,2).
+search: right: 'e' found at (6,3).
+search: <are> found.
+search: currPos<right>: (6,4).
+search: ...backtracking: (6,3).
+search: currPos<down>: (7,3).
+search: ...backtracking: (6,3).
+search: currPos<left>: (6,2).
+search: left: 'r' found at (6,2).
+search: overlap...backtracking: (6,3).
+search: currPos<up>: (5,3).
+search: ...backtracking: (6,3).
+search: currPos<down>: (7,0).
+search: down: 'a' found at (7,0).
+search: down: 'r' found at (8,0).
+search: down: 'e' found at (9,0).
+search: <are> found.
+search: currPos<right>: (9,1).
+search: right: 'r' found at (9,1).
+search: right: 'e' found at (9,2).
+search: right: 'a' found at (9,3).
+search: right: 'l' found at (9,4).
+search: right: 'l' found at (9,5).
+search: right: 'y' found at (9,6).
+search: <really> found.
+search: currPos<right>: (9,7).
+search: ...backtracking: (9,6).
+search: currPos<down>: (10,6).
+search: ...backtracking: (9,6).
+search: currPos<left>: (9,5).
+search: ...backtracking: (9,6).
+search: currPos<up>: (8,6).
+search: up: 'n' found at (8,6).
+search: up: 'e' found at (7,6).
+search: up: 'a' found at (6,6).
+search: up: 't' found at (5,6).
+search: <neat> found.
+search: currPos<right>: (5,7).
+search: right: 'h' found at (5,7).
+search: right: 'e' found at (5,8).
+search: overlap...backtracking: (5,6).
+search: currPos<down>: (6,6).
+search: ...backtracking: (5,6).
+search: currPos<left>: (5,5).
+search: ...backtracking: (5,6).
+search: currPos<up>: (4,6).
+search: ...backtracking: (5,6).
+search: currPos<down>: (10,0).
+search: ...backtracking: (9,0).
+search: currPos<left>: (9,-1).
+search: ...backtracking: (9,0).
+search: currPos<up>: (8,0).
+search: up: 'r' found at (8,0).
+search: overlap...backtracking: (9,0).
+search: currPos<left>: (6,-1).
+search: ...backtracking: (6,0).
+search: currPos<up>: (5,0).
+search: ...backtracking: (6,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,4).
+search: ...backtracking: (1,4).
+search: currPos: (1,5): 'a' not found.
+search: currPos: (1,6): 'a' found.
+search: currPos<right>: (1,7).
+search: ...backtracking: (1,6).
+search: currPos<down>: (2,6).
+search: ...backtracking: (1,6).
+search: currPos<left>: (1,5).
+search: ...backtracking: (1,6).
+search: currPos<up>: (0,6).
+search: ...backtracking: (1,6).
+search: currPos: (1,7): 'a' not found.
+search: currPos: (1,8): 'a' found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: ...backtracking: (1,8).
+search: currPos<left>: (1,7).
+search: ...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos: (1,9): 'a' not found.
+search: currPos: (9,0): 'a' not found.
+search: currPos: (9,1): 'a' not found.
+search: currPos: (9,2): 'a' not found.
+search: currPos: (9,3): 'a' found.
+search: currPos<right>: (9,4).
+search: ...backtracking: (9,3).
+search: currPos<down>: (10,3).
+search: ...backtracking: (9,3).
+search: currPos<left>: (9,2).
+search: ...backtracking: (9,3).
+search: currPos<up>: (8,3).
+search: ...backtracking: (9,3).
+search: currPos: (9,4): 'a' not found.
+search: currPos: (9,5): 'a' not found.
+search: currPos: (9,6): 'a' not found.
+search: currPos: (9,7): 'a' not found.
+search: currPos: (9,8): 'a' not found.
+search: currPos: (9,9): 'a' not found.
+search: FAILED!: 'abstract data types are really neat he sar' not found!
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: abstract data types are really neat ggg
+Search word/phrase is valid. Number of words in phrase is: 7
+Start search at (0,0).
+search: currPos: (0,0): 'a' found.
+search: currPos<right>: (0,1).
+search: right: 'b' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: right: 'r' found at (0,4).
+search: right: 'a' found at (0,5).
+search: right: 'c' found at (0,6).
+search: right: 't' found at (0,7).
+search: <abstract> found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: ...backtracking: (0,7).
+search: currPos<left>: (0,6).
+search: ...backtracking: (0,7).
+search: currPos<up>: (-1,7).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,0).
+search: ...backtracking: (0,0).
+search: currPos<left>: (0,-1).
+search: ...backtracking: (0,0).
+search: currPos<up>: (-1,0).
+search: ...backtracking: (0,0).
+search: currPos: (0,1): 'a' not found.
+search: currPos: (0,2): 'a' not found.
+search: currPos: (0,3): 'a' not found.
+search: currPos: (0,4): 'a' not found.
+search: currPos: (0,5): 'a' found.
+search: currPos<right>: (0,6).
+search: ...backtracking: (0,5).
+search: currPos<down>: (1,5).
+search: ...backtracking: (0,5).
+search: currPos<left>: (0,4).
+search: ...backtracking: (0,5).
+search: currPos<up>: (-1,5).
+search: ...backtracking: (0,5).
+search: currPos: (0,6): 'a' not found.
+search: currPos: (0,7): 'a' not found.
+search: currPos: (0,8): 'a' not found.
+search: currPos: (0,9): 'a' not found.
+search: currPos: (1,0): 'a' found.
+search: currPos<right>: (1,1).
+search: ...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: ...backtracking: (1,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos: (1,1): 'a' not found.
+search: currPos: (1,2): 'a' found.
+search: currPos<right>: (1,3).
+search: ...backtracking: (1,2).
+search: currPos<down>: (2,2).
+search: ...backtracking: (1,2).
+search: currPos<left>: (1,1).
+search: ...backtracking: (1,2).
+search: currPos<up>: (0,2).
+search: ...backtracking: (1,2).
+search: currPos: (1,3): 'a' not found.
+search: currPos: (1,4): 'a' not found.
+search: currPos: (1,5): 'a' not found.
+search: currPos: (1,6): 'a' found.
+search: currPos<right>: (1,7).
+search: ...backtracking: (1,6).
+search: currPos<down>: (2,6).
+search: ...backtracking: (1,6).
+search: currPos<left>: (1,5).
+search: ...backtracking: (1,6).
+search: currPos<up>: (0,6).
+search: ...backtracking: (1,6).
+search: currPos: (1,7): 'a' not found.
+search: currPos: (1,8): 'a' found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: ...backtracking: (1,8).
+search: currPos<left>: (1,7).
+search: ...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos: (1,9): 'a' not found.
+search: currPos: (2,0): 'a' not found.
+search: currPos: (2,1): 'a' not found.
+search: currPos: (2,2): 'a' not found.
+search: currPos: (2,3): 'a' not found.
+search: currPos: (2,4): 'a' not found.
+search: currPos: (2,5): 'a' found.
+search: currPos<right>: (2,6).
+search: ...backtracking: (2,5).
+search: currPos<down>: (3,5).
+search: ...backtracking: (2,5).
+search: currPos<left>: (2,4).
+search: ...backtracking: (2,5).
+search: currPos<up>: (1,5).
+search: ...backtracking: (2,5).
+search: currPos: (2,6): 'a' not found.
+search: currPos: (2,7): 'a' not found.
+search: currPos: (2,8): 'a' not found.
+search: currPos: (2,9): 'a' not found.
+search: currPos: (3,0): 'a' not found.
+search: currPos: (3,1): 'a' not found.
+search: currPos: (3,2): 'a' not found.
+search: currPos: (3,3): 'a' not found.
+search: currPos: (3,4): 'a' found.
+search: currPos<right>: (3,5).
+search: ...backtracking: (3,4).
+search: currPos<down>: (4,4).
+search: ...backtracking: (3,4).
+search: currPos<left>: (3,3).
+search: ...backtracking: (3,4).
+search: currPos<up>: (2,4).
+search: ...backtracking: (3,4).
+search: currPos: (3,5): 'a' not found.
+search: currPos: (3,6): 'a' not found.
+search: currPos: (3,7): 'a' not found.
+search: currPos: (3,8): 'a' not found.
+search: currPos: (3,9): 'a' not found.
+search: currPos: (4,0): 'a' not found.
+search: currPos: (4,1): 'a' not found.
+search: currPos: (4,2): 'a' not found.
+search: currPos: (4,3): 'a' not found.
+search: currPos: (4,4): 'a' not found.
+search: currPos: (4,5): 'a' found.
+search: currPos<right>: (4,6).
+search: ...backtracking: (4,5).
+search: currPos<down>: (5,5).
+search: ...backtracking: (4,5).
+search: currPos<left>: (4,4).
+search: ...backtracking: (4,5).
+search: currPos<up>: (3,5).
+search: ...backtracking: (4,5).
+search: currPos: (4,6): 'a' not found.
+search: currPos: (4,7): 'a' not found.
+search: currPos: (4,8): 'a' not found.
+search: currPos: (4,9): 'a' not found.
+search: currPos: (5,0): 'a' not found.
+search: currPos: (5,1): 'a' not found.
+search: currPos: (5,2): 'a' not found.
+search: currPos: (5,3): 'a' not found.
+search: currPos: (5,4): 'a' not found.
+search: currPos: (5,5): 'a' not found.
+search: currPos: (5,6): 'a' not found.
+search: currPos: (5,7): 'a' not found.
+search: currPos: (5,8): 'a' not found.
+search: currPos: (5,9): 'a' not found.
+search: currPos: (6,0): 'a' not found.
+search: currPos: (6,1): 'a' found.
+search: currPos<right>: (6,2).
+search: ...backtracking: (6,1).
+search: currPos<down>: (7,1).
+search: ...backtracking: (6,1).
+search: currPos<left>: (6,0).
+search: ...backtracking: (6,1).
+search: currPos<up>: (5,1).
+search: up: 'b' found at (5,1).
+search: ...backtracking: (6,1).
+search: currPos: (6,2): 'a' not found.
+search: currPos: (6,3): 'a' not found.
+search: currPos: (6,4): 'a' not found.
+search: currPos: (6,5): 'a' not found.
+search: currPos: (6,6): 'a' found.
+search: currPos<right>: (6,7).
+search: ...backtracking: (6,6).
+search: currPos<down>: (7,6).
+search: ...backtracking: (6,6).
+search: currPos<left>: (6,5).
+search: ...backtracking: (6,6).
+search: currPos<up>: (5,6).
+search: ...backtracking: (6,6).
+search: currPos: (6,7): 'a' not found.
+search: currPos: (6,8): 'a' not found.
+search: currPos: (6,9): 'a' not found.
+search: currPos: (7,0): 'a' found.
+search: currPos<right>: (7,1).
+search: ...backtracking: (7,0).
+search: currPos<down>: (8,0).
+search: ...backtracking: (7,0).
+search: currPos<left>: (7,-1).
+search: ...backtracking: (7,0).
+search: currPos<up>: (6,0).
+search: ...backtracking: (7,0).
+search: currPos: (7,1): 'a' not found.
+search: currPos: (7,2): 'a' not found.
+search: currPos: (7,3): 'a' not found.
+search: currPos: (7,4): 'a' not found.
+search: currPos: (7,5): 'a' not found.
+search: currPos: (7,6): 'a' not found.
+search: currPos: (7,7): 'a' not found.
+search: currPos: (7,8): 'a' found.
+search: currPos<right>: (7,9).
+search: ...backtracking: (7,8).
+search: currPos<down>: (8,8).
+search: ...backtracking: (7,8).
+search: currPos<left>: (7,7).
+search: ...backtracking: (7,8).
+search: currPos<up>: (6,8).
+search: ...backtracking: (7,8).
+search: currPos: (7,9): 'a' not found.
+search: currPos: (8,0): 'a' not found.
+search: currPos: (8,1): 'a' not found.
+search: currPos: (8,2): 'a' not found.
+search: currPos: (8,3): 'a' not found.
+search: currPos: (8,4): 'a' found.
+search: currPos<right>: (8,5).
+search: ...backtracking: (8,4).
+search: currPos<down>: (9,4).
+search: ...backtracking: (8,4).
+search: currPos<left>: (8,3).
+search: ...backtracking: (8,4).
+search: currPos<up>: (7,4).
+search: up: 'b' found at (7,4).
+search: up: 's' found at (6,4).
+search: up: 't' found at (5,4).
+search: up: 'r' found at (4,4).
+search: up: 'a' found at (3,4).
+search: up: 'c' found at (2,4).
+search: up: 't' found at (1,4).
+search: <abstract> found.
+search: currPos<right>: (1,5).
+search: right: 'd' found at (1,5).
+search: right: 'a' found at (1,6).
+search: right: 't' found at (1,7).
+search: right: 'a' found at (1,8).
+search: <data> found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: down: 't' found at (2,8).
+search: down: 'y' found at (3,8).
+search: down: 'p' found at (4,8).
+search: down: 'e' found at (5,8).
+search: down: 's' found at (6,8).
+search: <types> found.
+search: currPos<right>: (6,9).
+search: ...backtracking: (6,8).
+search: currPos<down>: (7,8).
+search: down: 'a' found at (7,8).
+search: down: 'r' found at (8,8).
+search: down: 'e' found at (9,8).
+search: <are> found.
+search: currPos<right>: (9,9).
+search: ...backtracking: (9,8).
+search: currPos<down>: (10,8).
+search: ...backtracking: (9,8).
+search: currPos<left>: (9,7).
+search: left: 'r' found at (9,7).
+search: ...backtracking: (9,8).
+search: currPos<up>: (8,8).
+search: up: 'r' found at (8,8).
+search: overlap...backtracking: (9,8).
+search: currPos<left>: (6,7).
+search: ...backtracking: (6,8).
+search: currPos<up>: (5,8).
+search: ...backtracking: (6,8).
+search: currPos<left>: (1,7).
+search: left: 't' found at (1,7).
+search: overlap...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,4).
+search: ...backtracking: (1,4).
+search: currPos<left>: (1,3).
+search: left: 'd' found at (1,3).
+search: left: 'a' found at (1,2).
+search: left: 't' found at (1,1).
+search: left: 'a' found at (1,0).
+search: <data> found.
+search: currPos<right>: (1,1).
+search: right: 't' found at (1,1).
+search: overlap...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: down: 't' found at (2,0).
+search: down: 'y' found at (3,0).
+search: down: 'p' found at (4,0).
+search: down: 'e' found at (5,0).
+search: down: 's' found at (6,0).
+search: <types> found.
+search: currPos<right>: (6,1).
+search: right: 'a' found at (6,1).
+search: right: 'r' found at (6,2).
+search: right: 'e' found at (6,3).
+search: <are> found.
+search: currPos<right>: (6,4).
+search: ...backtracking: (6,3).
+search: currPos<down>: (7,3).
+search: ...backtracking: (6,3).
+search: currPos<left>: (6,2).
+search: left: 'r' found at (6,2).
+search: overlap...backtracking: (6,3).
+search: currPos<up>: (5,3).
+search: ...backtracking: (6,3).
+search: currPos<down>: (7,0).
+search: down: 'a' found at (7,0).
+search: down: 'r' found at (8,0).
+search: down: 'e' found at (9,0).
+search: <are> found.
+search: currPos<right>: (9,1).
+search: right: 'r' found at (9,1).
+search: right: 'e' found at (9,2).
+search: right: 'a' found at (9,3).
+search: right: 'l' found at (9,4).
+search: right: 'l' found at (9,5).
+search: right: 'y' found at (9,6).
+search: <really> found.
+search: currPos<right>: (9,7).
+search: ...backtracking: (9,6).
+search: currPos<down>: (10,6).
+search: ...backtracking: (9,6).
+search: currPos<left>: (9,5).
+search: ...backtracking: (9,6).
+search: currPos<up>: (8,6).
+search: up: 'n' found at (8,6).
+search: up: 'e' found at (7,6).
+search: up: 'a' found at (6,6).
+search: up: 't' found at (5,6).
+search: <neat> found.
+search: currPos<right>: (5,7).
+search: ...backtracking: (5,6).
+search: currPos<down>: (6,6).
+search: ...backtracking: (5,6).
+search: currPos<left>: (5,5).
+search: ...backtracking: (5,6).
+search: currPos<up>: (4,6).
+search: up: 'g' found at (4,6).
+search: up: 'g' found at (3,6).
+search: up: 'g' found at (2,6).
+search: <ggg> found.
+search: SUCCESS!: 'abstract data types are really neat ggg' found!
+Phrase Coordinates for: 'abstract data types are really neat ggg'.
+word coordinate: abstract: <8,4> to <1,4>.
+word coordinate: data: <1,3> to <1,0>.
+word coordinate: types: <2,0> to <6,0>.
+word coordinate: are: <7,0> to <9,0>.
+word coordinate: really: <9,1> to <9,6>.
+word coordinate: neat: <8,6> to <5,6>.
+word coordinate: ggg: <4,6> to <2,6>.
+End coordinates.
+Phrase Found Table for: 'abstract data types are really neat ggg':
+
+a b s t r a c t i j 
+A T A D T d a t a j 
+T b c d C a G h t j 
+Y b c d A t G h y j 
+P b c d R a G h p j 
+E b c d T f T h e j 
+S a r e S f A h s j 
+A r e d B f E h a j 
+R b c d A f N h r j 
+E R E A L L Y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: data
+Search word/phrase is valid. Number of words in phrase is: 1
+Start search at (0,0).
+search: currPos: (0,0): 'd' not found.
+search: currPos: (0,1): 'd' not found.
+search: currPos: (0,2): 'd' not found.
+search: currPos: (0,3): 'd' not found.
+search: currPos: (0,4): 'd' not found.
+search: currPos: (0,5): 'd' not found.
+search: currPos: (0,6): 'd' not found.
+search: currPos: (0,7): 'd' not found.
+search: currPos: (0,8): 'd' not found.
+search: currPos: (0,9): 'd' not found.
+search: currPos: (1,0): 'd' not found.
+search: currPos: (1,1): 'd' not found.
+search: currPos: (1,2): 'd' not found.
+search: currPos: (1,3): 'd' found.
+search: currPos<right>: (1,4).
+search: ...backtracking: (1,3).
+search: currPos<down>: (2,3).
+search: ...backtracking: (1,3).
+search: currPos<left>: (1,2).
+search: left: 'a' found at (1,2).
+search: left: 't' found at (1,1).
+search: left: 'a' found at (1,0).
+search: <data> found.
+search: SUCCESS!: 'data' found!
+Phrase Coordinates for: 'data'.
+word coordinate: data: <1,3> to <1,0>.
+End coordinates.
+Phrase Found Table for: 'data':
+
+a b s t r a c t i j 
+A T A D t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: abstract data
+Search word/phrase is valid. Number of words in phrase is: 2
+Start search at (0,0).
+search: currPos: (0,0): 'a' found.
+search: currPos<right>: (0,1).
+search: right: 'b' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: right: 'r' found at (0,4).
+search: right: 'a' found at (0,5).
+search: right: 'c' found at (0,6).
+search: right: 't' found at (0,7).
+search: <abstract> found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: ...backtracking: (0,7).
+search: currPos<left>: (0,6).
+search: ...backtracking: (0,7).
+search: currPos<up>: (-1,7).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,0).
+search: ...backtracking: (0,0).
+search: currPos<left>: (0,-1).
+search: ...backtracking: (0,0).
+search: currPos<up>: (-1,0).
+search: ...backtracking: (0,0).
+search: currPos: (0,1): 'a' not found.
+search: currPos: (0,2): 'a' not found.
+search: currPos: (0,3): 'a' not found.
+search: currPos: (0,4): 'a' not found.
+search: currPos: (0,5): 'a' found.
+search: currPos<right>: (0,6).
+search: ...backtracking: (0,5).
+search: currPos<down>: (1,5).
+search: ...backtracking: (0,5).
+search: currPos<left>: (0,4).
+search: ...backtracking: (0,5).
+search: currPos<up>: (-1,5).
+search: ...backtracking: (0,5).
+search: currPos: (0,6): 'a' not found.
+search: currPos: (0,7): 'a' not found.
+search: currPos: (0,8): 'a' not found.
+search: currPos: (0,9): 'a' not found.
+search: currPos: (1,0): 'a' found.
+search: currPos<right>: (1,1).
+search: ...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: ...backtracking: (1,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos: (1,1): 'a' not found.
+search: currPos: (1,2): 'a' found.
+search: currPos<right>: (1,3).
+search: ...backtracking: (1,2).
+search: currPos<down>: (2,2).
+search: ...backtracking: (1,2).
+search: currPos<left>: (1,1).
+search: ...backtracking: (1,2).
+search: currPos<up>: (0,2).
+search: ...backtracking: (1,2).
+search: currPos: (1,3): 'a' not found.
+search: currPos: (1,4): 'a' not found.
+search: currPos: (1,5): 'a' not found.
+search: currPos: (1,6): 'a' found.
+search: currPos<right>: (1,7).
+search: ...backtracking: (1,6).
+search: currPos<down>: (2,6).
+search: ...backtracking: (1,6).
+search: currPos<left>: (1,5).
+search: ...backtracking: (1,6).
+search: currPos<up>: (0,6).
+search: ...backtracking: (1,6).
+search: currPos: (1,7): 'a' not found.
+search: currPos: (1,8): 'a' found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: ...backtracking: (1,8).
+search: currPos<left>: (1,7).
+search: ...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos: (1,9): 'a' not found.
+search: currPos: (2,0): 'a' not found.
+search: currPos: (2,1): 'a' not found.
+search: currPos: (2,2): 'a' not found.
+search: currPos: (2,3): 'a' not found.
+search: currPos: (2,4): 'a' not found.
+search: currPos: (2,5): 'a' found.
+search: currPos<right>: (2,6).
+search: ...backtracking: (2,5).
+search: currPos<down>: (3,5).
+search: ...backtracking: (2,5).
+search: currPos<left>: (2,4).
+search: ...backtracking: (2,5).
+search: currPos<up>: (1,5).
+search: ...backtracking: (2,5).
+search: currPos: (2,6): 'a' not found.
+search: currPos: (2,7): 'a' not found.
+search: currPos: (2,8): 'a' not found.
+search: currPos: (2,9): 'a' not found.
+search: currPos: (3,0): 'a' not found.
+search: currPos: (3,1): 'a' not found.
+search: currPos: (3,2): 'a' not found.
+search: currPos: (3,3): 'a' not found.
+search: currPos: (3,4): 'a' found.
+search: currPos<right>: (3,5).
+search: ...backtracking: (3,4).
+search: currPos<down>: (4,4).
+search: ...backtracking: (3,4).
+search: currPos<left>: (3,3).
+search: ...backtracking: (3,4).
+search: currPos<up>: (2,4).
+search: ...backtracking: (3,4).
+search: currPos: (3,5): 'a' not found.
+search: currPos: (3,6): 'a' not found.
+search: currPos: (3,7): 'a' not found.
+search: currPos: (3,8): 'a' not found.
+search: currPos: (3,9): 'a' not found.
+search: currPos: (4,0): 'a' not found.
+search: currPos: (4,1): 'a' not found.
+search: currPos: (4,2): 'a' not found.
+search: currPos: (4,3): 'a' not found.
+search: currPos: (4,4): 'a' not found.
+search: currPos: (4,5): 'a' found.
+search: currPos<right>: (4,6).
+search: ...backtracking: (4,5).
+search: currPos<down>: (5,5).
+search: ...backtracking: (4,5).
+search: currPos<left>: (4,4).
+search: ...backtracking: (4,5).
+search: currPos<up>: (3,5).
+search: ...backtracking: (4,5).
+search: currPos: (4,6): 'a' not found.
+search: currPos: (4,7): 'a' not found.
+search: currPos: (4,8): 'a' not found.
+search: currPos: (4,9): 'a' not found.
+search: currPos: (5,0): 'a' not found.
+search: currPos: (5,1): 'a' not found.
+search: currPos: (5,2): 'a' not found.
+search: currPos: (5,3): 'a' not found.
+search: currPos: (5,4): 'a' not found.
+search: currPos: (5,5): 'a' not found.
+search: currPos: (5,6): 'a' not found.
+search: currPos: (5,7): 'a' not found.
+search: currPos: (5,8): 'a' not found.
+search: currPos: (5,9): 'a' not found.
+search: currPos: (6,0): 'a' not found.
+search: currPos: (6,1): 'a' found.
+search: currPos<right>: (6,2).
+search: ...backtracking: (6,1).
+search: currPos<down>: (7,1).
+search: ...backtracking: (6,1).
+search: currPos<left>: (6,0).
+search: ...backtracking: (6,1).
+search: currPos<up>: (5,1).
+search: up: 'b' found at (5,1).
+search: ...backtracking: (6,1).
+search: currPos: (6,2): 'a' not found.
+search: currPos: (6,3): 'a' not found.
+search: currPos: (6,4): 'a' not found.
+search: currPos: (6,5): 'a' not found.
+search: currPos: (6,6): 'a' found.
+search: currPos<right>: (6,7).
+search: ...backtracking: (6,6).
+search: currPos<down>: (7,6).
+search: ...backtracking: (6,6).
+search: currPos<left>: (6,5).
+search: ...backtracking: (6,6).
+search: currPos<up>: (5,6).
+search: ...backtracking: (6,6).
+search: currPos: (6,7): 'a' not found.
+search: currPos: (6,8): 'a' not found.
+search: currPos: (6,9): 'a' not found.
+search: currPos: (7,0): 'a' found.
+search: currPos<right>: (7,1).
+search: ...backtracking: (7,0).
+search: currPos<down>: (8,0).
+search: ...backtracking: (7,0).
+search: currPos<left>: (7,-1).
+search: ...backtracking: (7,0).
+search: currPos<up>: (6,0).
+search: ...backtracking: (7,0).
+search: currPos: (7,1): 'a' not found.
+search: currPos: (7,2): 'a' not found.
+search: currPos: (7,3): 'a' not found.
+search: currPos: (7,4): 'a' not found.
+search: currPos: (7,5): 'a' not found.
+search: currPos: (7,6): 'a' not found.
+search: currPos: (7,7): 'a' not found.
+search: currPos: (7,8): 'a' found.
+search: currPos<right>: (7,9).
+search: ...backtracking: (7,8).
+search: currPos<down>: (8,8).
+search: ...backtracking: (7,8).
+search: currPos<left>: (7,7).
+search: ...backtracking: (7,8).
+search: currPos<up>: (6,8).
+search: ...backtracking: (7,8).
+search: currPos: (7,9): 'a' not found.
+search: currPos: (8,0): 'a' not found.
+search: currPos: (8,1): 'a' not found.
+search: currPos: (8,2): 'a' not found.
+search: currPos: (8,3): 'a' not found.
+search: currPos: (8,4): 'a' found.
+search: currPos<right>: (8,5).
+search: ...backtracking: (8,4).
+search: currPos<down>: (9,4).
+search: ...backtracking: (8,4).
+search: currPos<left>: (8,3).
+search: ...backtracking: (8,4).
+search: currPos<up>: (7,4).
+search: up: 'b' found at (7,4).
+search: up: 's' found at (6,4).
+search: up: 't' found at (5,4).
+search: up: 'r' found at (4,4).
+search: up: 'a' found at (3,4).
+search: up: 'c' found at (2,4).
+search: up: 't' found at (1,4).
+search: <abstract> found.
+search: currPos<right>: (1,5).
+search: right: 'd' found at (1,5).
+search: right: 'a' found at (1,6).
+search: right: 't' found at (1,7).
+search: right: 'a' found at (1,8).
+search: <data> found.
+search: SUCCESS!: 'abstract data' found!
+Phrase Coordinates for: 'abstract data'.
+word coordinate: abstract: <8,4> to <1,4>.
+word coordinate: data: <1,5> to <1,8>.
+End coordinates.
+Phrase Found Table for: 'abstract data':
+
+a b s t r a c t i j 
+a t a d T D A T A j 
+t b c d C a g h t j 
+y b c d A t g h y j 
+p b c d R a g h p j 
+e b c d T f t h e j 
+s a r e S f a h s j 
+a r e d B f e h a j 
+r b c d A f n h r j 
+e r e a l l y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: really
+Search word/phrase is valid. Number of words in phrase is: 1
+Start search at (0,0).
+search: currPos: (0,0): 'r' not found.
+search: currPos: (0,1): 'r' not found.
+search: currPos: (0,2): 'r' not found.
+search: currPos: (0,3): 'r' not found.
+search: currPos: (0,4): 'r' found.
+search: currPos<right>: (0,5).
+search: ...backtracking: (0,4).
+search: currPos<down>: (1,4).
+search: ...backtracking: (0,4).
+search: currPos<left>: (0,3).
+search: ...backtracking: (0,4).
+search: currPos<up>: (-1,4).
+search: ...backtracking: (0,4).
+search: currPos: (0,5): 'r' not found.
+search: currPos: (0,6): 'r' not found.
+search: currPos: (0,7): 'r' not found.
+search: currPos: (0,8): 'r' not found.
+search: currPos: (0,9): 'r' not found.
+search: currPos: (1,0): 'r' not found.
+search: currPos: (1,1): 'r' not found.
+search: currPos: (1,2): 'r' not found.
+search: currPos: (1,3): 'r' not found.
+search: currPos: (1,4): 'r' not found.
+search: currPos: (1,5): 'r' not found.
+search: currPos: (1,6): 'r' not found.
+search: currPos: (1,7): 'r' not found.
+search: currPos: (1,8): 'r' not found.
+search: currPos: (1,9): 'r' not found.
+search: currPos: (2,0): 'r' not found.
+search: currPos: (2,1): 'r' not found.
+search: currPos: (2,2): 'r' not found.
+search: currPos: (2,3): 'r' not found.
+search: currPos: (2,4): 'r' not found.
+search: currPos: (2,5): 'r' not found.
+search: currPos: (2,6): 'r' not found.
+search: currPos: (2,7): 'r' not found.
+search: currPos: (2,8): 'r' not found.
+search: currPos: (2,9): 'r' not found.
+search: currPos: (3,0): 'r' not found.
+search: currPos: (3,1): 'r' not found.
+search: currPos: (3,2): 'r' not found.
+search: currPos: (3,3): 'r' not found.
+search: currPos: (3,4): 'r' not found.
+search: currPos: (3,5): 'r' not found.
+search: currPos: (3,6): 'r' not found.
+search: currPos: (3,7): 'r' not found.
+search: currPos: (3,8): 'r' not found.
+search: currPos: (3,9): 'r' not found.
+search: currPos: (4,0): 'r' not found.
+search: currPos: (4,1): 'r' not found.
+search: currPos: (4,2): 'r' not found.
+search: currPos: (4,3): 'r' not found.
+search: currPos: (4,4): 'r' found.
+search: currPos<right>: (4,5).
+search: ...backtracking: (4,4).
+search: currPos<down>: (5,4).
+search: ...backtracking: (4,4).
+search: currPos<left>: (4,3).
+search: ...backtracking: (4,4).
+search: currPos<up>: (3,4).
+search: ...backtracking: (4,4).
+search: currPos: (4,5): 'r' not found.
+search: currPos: (4,6): 'r' not found.
+search: currPos: (4,7): 'r' not found.
+search: currPos: (4,8): 'r' not found.
+search: currPos: (4,9): 'r' not found.
+search: currPos: (5,0): 'r' not found.
+search: currPos: (5,1): 'r' not found.
+search: currPos: (5,2): 'r' not found.
+search: currPos: (5,3): 'r' not found.
+search: currPos: (5,4): 'r' not found.
+search: currPos: (5,5): 'r' not found.
+search: currPos: (5,6): 'r' not found.
+search: currPos: (5,7): 'r' not found.
+search: currPos: (5,8): 'r' not found.
+search: currPos: (5,9): 'r' not found.
+search: currPos: (6,0): 'r' not found.
+search: currPos: (6,1): 'r' not found.
+search: currPos: (6,2): 'r' found.
+search: currPos<right>: (6,3).
+search: right: 'e' found at (6,3).
+search: ...backtracking: (6,2).
+search: currPos<down>: (7,2).
+search: down: 'e' found at (7,2).
+search: ...backtracking: (6,2).
+search: currPos<left>: (6,1).
+search: ...backtracking: (6,2).
+search: currPos<up>: (5,2).
+search: ...backtracking: (6,2).
+search: currPos: (6,3): 'r' not found.
+search: currPos: (6,4): 'r' not found.
+search: currPos: (6,5): 'r' not found.
+search: currPos: (6,6): 'r' not found.
+search: currPos: (6,7): 'r' not found.
+search: currPos: (6,8): 'r' not found.
+search: currPos: (6,9): 'r' not found.
+search: currPos: (7,0): 'r' not found.
+search: currPos: (7,1): 'r' found.
+search: currPos<right>: (7,2).
+search: right: 'e' found at (7,2).
+search: ...backtracking: (7,1).
+search: currPos<down>: (8,1).
+search: ...backtracking: (7,1).
+search: currPos<left>: (7,0).
+search: ...backtracking: (7,1).
+search: currPos<up>: (6,1).
+search: ...backtracking: (7,1).
+search: currPos: (7,2): 'r' not found.
+search: currPos: (7,3): 'r' not found.
+search: currPos: (7,4): 'r' not found.
+search: currPos: (7,5): 'r' not found.
+search: currPos: (7,6): 'r' not found.
+search: currPos: (7,7): 'r' not found.
+search: currPos: (7,8): 'r' not found.
+search: currPos: (7,9): 'r' not found.
+search: currPos: (8,0): 'r' found.
+search: currPos<right>: (8,1).
+search: ...backtracking: (8,0).
+search: currPos<down>: (9,0).
+search: down: 'e' found at (9,0).
+search: ...backtracking: (8,0).
+search: currPos<left>: (8,-1).
+search: ...backtracking: (8,0).
+search: currPos<up>: (7,0).
+search: ...backtracking: (8,0).
+search: currPos: (8,1): 'r' not found.
+search: currPos: (8,2): 'r' not found.
+search: currPos: (8,3): 'r' not found.
+search: currPos: (8,4): 'r' not found.
+search: currPos: (8,5): 'r' not found.
+search: currPos: (8,6): 'r' not found.
+search: currPos: (8,7): 'r' not found.
+search: currPos: (8,8): 'r' found.
+search: currPos<right>: (8,9).
+search: ...backtracking: (8,8).
+search: currPos<down>: (9,8).
+search: down: 'e' found at (9,8).
+search: ...backtracking: (8,8).
+search: currPos<left>: (8,7).
+search: ...backtracking: (8,8).
+search: currPos<up>: (7,8).
+search: ...backtracking: (8,8).
+search: currPos: (8,9): 'r' not found.
+search: currPos: (9,0): 'r' not found.
+search: currPos: (9,1): 'r' found.
+search: currPos<right>: (9,2).
+search: right: 'e' found at (9,2).
+search: right: 'a' found at (9,3).
+search: right: 'l' found at (9,4).
+search: right: 'l' found at (9,5).
+search: right: 'y' found at (9,6).
+search: <really> found.
+search: SUCCESS!: 'really' found!
+Phrase Coordinates for: 'really'.
+word coordinate: really: <9,1> to <9,6>.
+End coordinates.
+Phrase Found Table for: 'really':
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e R E A L L Y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: abstract tad
+Search word/phrase is valid. Number of words in phrase is: 2
+Start search at (0,0).
+search: currPos: (0,0): 'a' found.
+search: currPos<right>: (0,1).
+search: right: 'b' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: right: 'r' found at (0,4).
+search: right: 'a' found at (0,5).
+search: right: 'c' found at (0,6).
+search: right: 't' found at (0,7).
+search: <abstract> found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: down: 't' found at (1,7).
+search: ...backtracking: (0,7).
+search: currPos<left>: (0,6).
+search: ...backtracking: (0,7).
+search: currPos<up>: (-1,7).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,0).
+search: ...backtracking: (0,0).
+search: currPos<left>: (0,-1).
+search: ...backtracking: (0,0).
+search: currPos<up>: (-1,0).
+search: ...backtracking: (0,0).
+search: currPos: (0,1): 'a' not found.
+search: currPos: (0,2): 'a' not found.
+search: currPos: (0,3): 'a' not found.
+search: currPos: (0,4): 'a' not found.
+search: currPos: (0,5): 'a' found.
+search: currPos<right>: (0,6).
+search: ...backtracking: (0,5).
+search: currPos<down>: (1,5).
+search: ...backtracking: (0,5).
+search: currPos<left>: (0,4).
+search: ...backtracking: (0,5).
+search: currPos<up>: (-1,5).
+search: ...backtracking: (0,5).
+search: currPos: (0,6): 'a' not found.
+search: currPos: (0,7): 'a' not found.
+search: currPos: (0,8): 'a' not found.
+search: currPos: (0,9): 'a' not found.
+search: currPos: (1,0): 'a' found.
+search: currPos<right>: (1,1).
+search: ...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: ...backtracking: (1,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos: (1,1): 'a' not found.
+search: currPos: (1,2): 'a' found.
+search: currPos<right>: (1,3).
+search: ...backtracking: (1,2).
+search: currPos<down>: (2,2).
+search: ...backtracking: (1,2).
+search: currPos<left>: (1,1).
+search: ...backtracking: (1,2).
+search: currPos<up>: (0,2).
+search: ...backtracking: (1,2).
+search: currPos: (1,3): 'a' not found.
+search: currPos: (1,4): 'a' not found.
+search: currPos: (1,5): 'a' not found.
+search: currPos: (1,6): 'a' found.
+search: currPos<right>: (1,7).
+search: ...backtracking: (1,6).
+search: currPos<down>: (2,6).
+search: ...backtracking: (1,6).
+search: currPos<left>: (1,5).
+search: ...backtracking: (1,6).
+search: currPos<up>: (0,6).
+search: ...backtracking: (1,6).
+search: currPos: (1,7): 'a' not found.
+search: currPos: (1,8): 'a' found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: ...backtracking: (1,8).
+search: currPos<left>: (1,7).
+search: ...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos: (1,9): 'a' not found.
+search: currPos: (2,0): 'a' not found.
+search: currPos: (2,1): 'a' not found.
+search: currPos: (2,2): 'a' not found.
+search: currPos: (2,3): 'a' not found.
+search: currPos: (2,4): 'a' not found.
+search: currPos: (2,5): 'a' found.
+search: currPos<right>: (2,6).
+search: ...backtracking: (2,5).
+search: currPos<down>: (3,5).
+search: ...backtracking: (2,5).
+search: currPos<left>: (2,4).
+search: ...backtracking: (2,5).
+search: currPos<up>: (1,5).
+search: ...backtracking: (2,5).
+search: currPos: (2,6): 'a' not found.
+search: currPos: (2,7): 'a' not found.
+search: currPos: (2,8): 'a' not found.
+search: currPos: (2,9): 'a' not found.
+search: currPos: (3,0): 'a' not found.
+search: currPos: (3,1): 'a' not found.
+search: currPos: (3,2): 'a' not found.
+search: currPos: (3,3): 'a' not found.
+search: currPos: (3,4): 'a' found.
+search: currPos<right>: (3,5).
+search: ...backtracking: (3,4).
+search: currPos<down>: (4,4).
+search: ...backtracking: (3,4).
+search: currPos<left>: (3,3).
+search: ...backtracking: (3,4).
+search: currPos<up>: (2,4).
+search: ...backtracking: (3,4).
+search: currPos: (3,5): 'a' not found.
+search: currPos: (3,6): 'a' not found.
+search: currPos: (3,7): 'a' not found.
+search: currPos: (3,8): 'a' not found.
+search: currPos: (3,9): 'a' not found.
+search: currPos: (4,0): 'a' not found.
+search: currPos: (4,1): 'a' not found.
+search: currPos: (4,2): 'a' not found.
+search: currPos: (4,3): 'a' not found.
+search: currPos: (4,4): 'a' not found.
+search: currPos: (4,5): 'a' found.
+search: currPos<right>: (4,6).
+search: ...backtracking: (4,5).
+search: currPos<down>: (5,5).
+search: ...backtracking: (4,5).
+search: currPos<left>: (4,4).
+search: ...backtracking: (4,5).
+search: currPos<up>: (3,5).
+search: ...backtracking: (4,5).
+search: currPos: (4,6): 'a' not found.
+search: currPos: (4,7): 'a' not found.
+search: currPos: (4,8): 'a' not found.
+search: currPos: (4,9): 'a' not found.
+search: currPos: (5,0): 'a' not found.
+search: currPos: (5,1): 'a' not found.
+search: currPos: (5,2): 'a' not found.
+search: currPos: (5,3): 'a' not found.
+search: currPos: (5,4): 'a' not found.
+search: currPos: (5,5): 'a' not found.
+search: currPos: (5,6): 'a' not found.
+search: currPos: (5,7): 'a' not found.
+search: currPos: (5,8): 'a' not found.
+search: currPos: (5,9): 'a' not found.
+search: currPos: (6,0): 'a' not found.
+search: currPos: (6,1): 'a' found.
+search: currPos<right>: (6,2).
+search: ...backtracking: (6,1).
+search: currPos<down>: (7,1).
+search: ...backtracking: (6,1).
+search: currPos<left>: (6,0).
+search: ...backtracking: (6,1).
+search: currPos<up>: (5,1).
+search: up: 'b' found at (5,1).
+search: ...backtracking: (6,1).
+search: currPos: (6,2): 'a' not found.
+search: currPos: (6,3): 'a' not found.
+search: currPos: (6,4): 'a' not found.
+search: currPos: (6,5): 'a' not found.
+search: currPos: (6,6): 'a' found.
+search: currPos<right>: (6,7).
+search: ...backtracking: (6,6).
+search: currPos<down>: (7,6).
+search: ...backtracking: (6,6).
+search: currPos<left>: (6,5).
+search: ...backtracking: (6,6).
+search: currPos<up>: (5,6).
+search: ...backtracking: (6,6).
+search: currPos: (6,7): 'a' not found.
+search: currPos: (6,8): 'a' not found.
+search: currPos: (6,9): 'a' not found.
+search: currPos: (7,0): 'a' found.
+search: currPos<right>: (7,1).
+search: ...backtracking: (7,0).
+search: currPos<down>: (8,0).
+search: ...backtracking: (7,0).
+search: currPos<left>: (7,-1).
+search: ...backtracking: (7,0).
+search: currPos<up>: (6,0).
+search: ...backtracking: (7,0).
+search: currPos: (7,1): 'a' not found.
+search: currPos: (7,2): 'a' not found.
+search: currPos: (7,3): 'a' not found.
+search: currPos: (7,4): 'a' not found.
+search: currPos: (7,5): 'a' not found.
+search: currPos: (7,6): 'a' not found.
+search: currPos: (7,7): 'a' not found.
+search: currPos: (7,8): 'a' found.
+search: currPos<right>: (7,9).
+search: ...backtracking: (7,8).
+search: currPos<down>: (8,8).
+search: ...backtracking: (7,8).
+search: currPos<left>: (7,7).
+search: ...backtracking: (7,8).
+search: currPos<up>: (6,8).
+search: ...backtracking: (7,8).
+search: currPos: (7,9): 'a' not found.
+search: currPos: (8,0): 'a' not found.
+search: currPos: (8,1): 'a' not found.
+search: currPos: (8,2): 'a' not found.
+search: currPos: (8,3): 'a' not found.
+search: currPos: (8,4): 'a' found.
+search: currPos<right>: (8,5).
+search: ...backtracking: (8,4).
+search: currPos<down>: (9,4).
+search: ...backtracking: (8,4).
+search: currPos<left>: (8,3).
+search: ...backtracking: (8,4).
+search: currPos<up>: (7,4).
+search: up: 'b' found at (7,4).
+search: up: 's' found at (6,4).
+search: up: 't' found at (5,4).
+search: up: 'r' found at (4,4).
+search: up: 'a' found at (3,4).
+search: up: 'c' found at (2,4).
+search: up: 't' found at (1,4).
+search: <abstract> found.
+search: currPos<right>: (1,5).
+search: ...backtracking: (1,4).
+search: currPos<down>: (2,4).
+search: ...backtracking: (1,4).
+search: currPos<left>: (1,3).
+search: ...backtracking: (1,4).
+search: currPos<up>: (0,4).
+search: ...backtracking: (1,4).
+search: currPos: (1,5): 'a' not found.
+search: currPos: (1,6): 'a' found.
+search: currPos<right>: (1,7).
+search: ...backtracking: (1,6).
+search: currPos<down>: (2,6).
+search: ...backtracking: (1,6).
+search: currPos<left>: (1,5).
+search: ...backtracking: (1,6).
+search: currPos<up>: (0,6).
+search: ...backtracking: (1,6).
+search: currPos: (1,7): 'a' not found.
+search: currPos: (1,8): 'a' found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: ...backtracking: (1,8).
+search: currPos<left>: (1,7).
+search: ...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos: (1,9): 'a' not found.
+search: currPos: (9,0): 'a' not found.
+search: currPos: (9,1): 'a' not found.
+search: currPos: (9,2): 'a' not found.
+search: currPos: (9,3): 'a' found.
+search: currPos<right>: (9,4).
+search: ...backtracking: (9,3).
+search: currPos<down>: (10,3).
+search: ...backtracking: (9,3).
+search: currPos<left>: (9,2).
+search: ...backtracking: (9,3).
+search: currPos<up>: (8,3).
+search: ...backtracking: (9,3).
+search: currPos: (9,4): 'a' not found.
+search: currPos: (9,5): 'a' not found.
+search: currPos: (9,6): 'a' not found.
+search: currPos: (9,7): 'a' not found.
+search: currPos: (9,8): 'a' not found.
+search: currPos: (9,9): 'a' not found.
+search: FAILED!: 'abstract tad' not found!
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: abstract t adt data types are really neat
+Search word/phrase is valid. Number of words in phrase is: 8
+Start search at (0,0).
+search: currPos: (0,0): 'a' found.
+search: currPos<right>: (0,1).
+search: right: 'b' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: right: 'r' found at (0,4).
+search: right: 'a' found at (0,5).
+search: right: 'c' found at (0,6).
+search: right: 't' found at (0,7).
+search: <abstract> found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: down: 't' found at (1,7).
+search: <t> found.
+search: currPos<right>: (1,8).
+search: right: 'a' found at (1,8).
+search: ...backtracking: (1,7).
+search: currPos<down>: (2,7).
+search: ...backtracking: (1,7).
+search: currPos<left>: (1,6).
+search: left: 'a' found at (1,6).
+search: left: 'd' found at (1,5).
+search: left: 't' found at (1,4).
+search: <adt> found.
+search: currPos<right>: (1,5).
+search: right: 'd' found at (1,5).
+search: overlap...backtracking: (1,4).
+search: currPos<down>: (2,4).
+search: ...backtracking: (1,4).
+search: currPos<left>: (1,3).
+search: left: 'd' found at (1,3).
+search: left: 'a' found at (1,2).
+search: left: 't' found at (1,1).
+search: left: 'a' found at (1,0).
+search: <data> found.
+search: currPos<right>: (1,1).
+search: right: 't' found at (1,1).
+search: overlap...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: down: 't' found at (2,0).
+search: down: 'y' found at (3,0).
+search: down: 'p' found at (4,0).
+search: down: 'e' found at (5,0).
+search: down: 's' found at (6,0).
+search: <types> found.
+search: currPos<right>: (6,1).
+search: right: 'a' found at (6,1).
+search: right: 'r' found at (6,2).
+search: right: 'e' found at (6,3).
+search: <are> found.
+search: currPos<right>: (6,4).
+search: ...backtracking: (6,3).
+search: currPos<down>: (7,3).
+search: ...backtracking: (6,3).
+search: currPos<left>: (6,2).
+search: left: 'r' found at (6,2).
+search: overlap...backtracking: (6,3).
+search: currPos<up>: (5,3).
+search: ...backtracking: (6,3).
+search: currPos<down>: (7,0).
+search: down: 'a' found at (7,0).
+search: down: 'r' found at (8,0).
+search: down: 'e' found at (9,0).
+search: <are> found.
+search: currPos<right>: (9,1).
+search: right: 'r' found at (9,1).
+search: right: 'e' found at (9,2).
+search: right: 'a' found at (9,3).
+search: right: 'l' found at (9,4).
+search: right: 'l' found at (9,5).
+search: right: 'y' found at (9,6).
+search: <really> found.
+search: currPos<right>: (9,7).
+search: ...backtracking: (9,6).
+search: currPos<down>: (10,6).
+search: ...backtracking: (9,6).
+search: currPos<left>: (9,5).
+search: ...backtracking: (9,6).
+search: currPos<up>: (8,6).
+search: up: 'n' found at (8,6).
+search: up: 'e' found at (7,6).
+search: up: 'a' found at (6,6).
+search: up: 't' found at (5,6).
+search: <neat> found.
+search: SUCCESS!: 'abstract t adt data types are really neat' found!
+Phrase Coordinates for: 'abstract t adt data types are really neat'.
+word coordinate: abstract: <0,0> to <0,7>.
+word coordinate: t: <1,7> to <1,7>.
+word coordinate: adt: <1,6> to <1,4>.
+word coordinate: data: <1,3> to <1,0>.
+word coordinate: types: <2,0> to <6,0>.
+word coordinate: are: <7,0> to <9,0>.
+word coordinate: really: <9,1> to <9,6>.
+word coordinate: neat: <8,6> to <5,6>.
+End coordinates.
+Phrase Found Table for: 'abstract t adt data types are really neat':
+
+A B S T R A C T i j 
+A T A D T D A T a j 
+T b c d c a g h t j 
+Y b c d a t g h y j 
+P b c d r a g h p j 
+E b c d t f T h e j 
+S a r e s f A h s j 
+A r e d b f E h a j 
+R b c d a f N h r j 
+E R E A L L Y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: g
+Search word/phrase is valid. Number of words in phrase is: 1
+Start search at (0,0).
+search: currPos: (0,0): 'g' not found.
+search: currPos: (0,1): 'g' not found.
+search: currPos: (0,2): 'g' not found.
+search: currPos: (0,3): 'g' not found.
+search: currPos: (0,4): 'g' not found.
+search: currPos: (0,5): 'g' not found.
+search: currPos: (0,6): 'g' not found.
+search: currPos: (0,7): 'g' not found.
+search: currPos: (0,8): 'g' not found.
+search: currPos: (0,9): 'g' not found.
+search: currPos: (1,0): 'g' not found.
+search: currPos: (1,1): 'g' not found.
+search: currPos: (1,2): 'g' not found.
+search: currPos: (1,3): 'g' not found.
+search: currPos: (1,4): 'g' not found.
+search: currPos: (1,5): 'g' not found.
+search: currPos: (1,6): 'g' not found.
+search: currPos: (1,7): 'g' not found.
+search: currPos: (1,8): 'g' not found.
+search: currPos: (1,9): 'g' not found.
+search: currPos: (2,0): 'g' not found.
+search: currPos: (2,1): 'g' not found.
+search: currPos: (2,2): 'g' not found.
+search: currPos: (2,3): 'g' not found.
+search: currPos: (2,4): 'g' not found.
+search: currPos: (2,5): 'g' not found.
+search: currPos: (2,6): 'g' found.
+search: <g> found.
+search: SUCCESS!: 'g' found!
+Phrase Coordinates for: 'g'.
+word coordinate: g: <2,6> to <2,6>.
+End coordinates.
+Phrase Found Table for: 'g':
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a G h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: red
+Search word/phrase is valid. Number of words in phrase is: 1
+Start search at (0,0).
+search: currPos: (0,0): 'r' not found.
+search: currPos: (0,1): 'r' not found.
+search: currPos: (0,2): 'r' not found.
+search: currPos: (0,3): 'r' not found.
+search: currPos: (0,4): 'r' found.
+search: currPos<right>: (0,5).
+search: ...backtracking: (0,4).
+search: currPos<down>: (1,4).
+search: ...backtracking: (0,4).
+search: currPos<left>: (0,3).
+search: ...backtracking: (0,4).
+search: currPos<up>: (-1,4).
+search: ...backtracking: (0,4).
+search: currPos: (0,5): 'r' not found.
+search: currPos: (0,6): 'r' not found.
+search: currPos: (0,7): 'r' not found.
+search: currPos: (0,8): 'r' not found.
+search: currPos: (0,9): 'r' not found.
+search: currPos: (1,0): 'r' not found.
+search: currPos: (1,1): 'r' not found.
+search: currPos: (1,2): 'r' not found.
+search: currPos: (1,3): 'r' not found.
+search: currPos: (1,4): 'r' not found.
+search: currPos: (1,5): 'r' not found.
+search: currPos: (1,6): 'r' not found.
+search: currPos: (1,7): 'r' not found.
+search: currPos: (1,8): 'r' not found.
+search: currPos: (1,9): 'r' not found.
+search: currPos: (2,0): 'r' not found.
+search: currPos: (2,1): 'r' not found.
+search: currPos: (2,2): 'r' not found.
+search: currPos: (2,3): 'r' not found.
+search: currPos: (2,4): 'r' not found.
+search: currPos: (2,5): 'r' not found.
+search: currPos: (2,6): 'r' not found.
+search: currPos: (2,7): 'r' not found.
+search: currPos: (2,8): 'r' not found.
+search: currPos: (2,9): 'r' not found.
+search: currPos: (3,0): 'r' not found.
+search: currPos: (3,1): 'r' not found.
+search: currPos: (3,2): 'r' not found.
+search: currPos: (3,3): 'r' not found.
+search: currPos: (3,4): 'r' not found.
+search: currPos: (3,5): 'r' not found.
+search: currPos: (3,6): 'r' not found.
+search: currPos: (3,7): 'r' not found.
+search: currPos: (3,8): 'r' not found.
+search: currPos: (3,9): 'r' not found.
+search: currPos: (4,0): 'r' not found.
+search: currPos: (4,1): 'r' not found.
+search: currPos: (4,2): 'r' not found.
+search: currPos: (4,3): 'r' not found.
+search: currPos: (4,4): 'r' found.
+search: currPos<right>: (4,5).
+search: ...backtracking: (4,4).
+search: currPos<down>: (5,4).
+search: ...backtracking: (4,4).
+search: currPos<left>: (4,3).
+search: ...backtracking: (4,4).
+search: currPos<up>: (3,4).
+search: ...backtracking: (4,4).
+search: currPos: (4,5): 'r' not found.
+search: currPos: (4,6): 'r' not found.
+search: currPos: (4,7): 'r' not found.
+search: currPos: (4,8): 'r' not found.
+search: currPos: (4,9): 'r' not found.
+search: currPos: (5,0): 'r' not found.
+search: currPos: (5,1): 'r' not found.
+search: currPos: (5,2): 'r' not found.
+search: currPos: (5,3): 'r' not found.
+search: currPos: (5,4): 'r' not found.
+search: currPos: (5,5): 'r' not found.
+search: currPos: (5,6): 'r' not found.
+search: currPos: (5,7): 'r' not found.
+search: currPos: (5,8): 'r' not found.
+search: currPos: (5,9): 'r' not found.
+search: currPos: (6,0): 'r' not found.
+search: currPos: (6,1): 'r' not found.
+search: currPos: (6,2): 'r' found.
+search: currPos<right>: (6,3).
+search: right: 'e' found at (6,3).
+search: ...backtracking: (6,2).
+search: currPos<down>: (7,2).
+search: down: 'e' found at (7,2).
+search: ...backtracking: (6,2).
+search: currPos<left>: (6,1).
+search: ...backtracking: (6,2).
+search: currPos<up>: (5,2).
+search: ...backtracking: (6,2).
+search: currPos: (6,3): 'r' not found.
+search: currPos: (6,4): 'r' not found.
+search: currPos: (6,5): 'r' not found.
+search: currPos: (6,6): 'r' not found.
+search: currPos: (6,7): 'r' not found.
+search: currPos: (6,8): 'r' not found.
+search: currPos: (6,9): 'r' not found.
+search: currPos: (7,0): 'r' not found.
+search: currPos: (7,1): 'r' found.
+search: currPos<right>: (7,2).
+search: right: 'e' found at (7,2).
+search: right: 'd' found at (7,3).
+search: <red> found.
+search: SUCCESS!: 'red' found!
+Phrase Coordinates for: 'red'.
+word coordinate: red: <7,1> to <7,3>.
+End coordinates.
+Phrase Found Table for: 'red':
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a R E D b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: jjjjjjjjjj
+Search word/phrase is valid. Number of words in phrase is: 1
+Start search at (0,0).
+search: currPos: (0,0): 'j' not found.
+search: currPos: (0,1): 'j' not found.
+search: currPos: (0,2): 'j' not found.
+search: currPos: (0,3): 'j' not found.
+search: currPos: (0,4): 'j' not found.
+search: currPos: (0,5): 'j' not found.
+search: currPos: (0,6): 'j' not found.
+search: currPos: (0,7): 'j' not found.
+search: currPos: (0,8): 'j' not found.
+search: currPos: (0,9): 'j' found.
+search: currPos<right>: (0,10).
+search: ...backtracking: (0,9).
+search: currPos<down>: (1,9).
+search: down: 'j' found at (1,9).
+search: down: 'j' found at (2,9).
+search: down: 'j' found at (3,9).
+search: down: 'j' found at (4,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: <jjjjjjjjjj> found.
+search: SUCCESS!: 'jjjjjjjjjj' found!
+Phrase Coordinates for: 'jjjjjjjjjj'.
+word coordinate: jjjjjjjjjj: <0,9> to <9,9>.
+End coordinates.
+Phrase Found Table for: 'jjjjjjjjjj':
+
+a b s t r a c t i J 
+a t a d t d a t a J 
+t b c d c a g h t J 
+y b c d a t g h y J 
+p b c d r a g h p J 
+e b c d t f t h e J 
+s a r e s f a h s J 
+a r e d b f e h a J 
+r b c d a f n h r J 
+e r e a l l y r e J 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: jjjjjjjjjj i a types are
+Search word/phrase is valid. Number of words in phrase is: 5
+Start search at (0,0).
+search: currPos: (0,0): 'j' not found.
+search: currPos: (0,1): 'j' not found.
+search: currPos: (0,2): 'j' not found.
+search: currPos: (0,3): 'j' not found.
+search: currPos: (0,4): 'j' not found.
+search: currPos: (0,5): 'j' not found.
+search: currPos: (0,6): 'j' not found.
+search: currPos: (0,7): 'j' not found.
+search: currPos: (0,8): 'j' not found.
+search: currPos: (0,9): 'j' found.
+search: currPos<right>: (0,10).
+search: ...backtracking: (0,9).
+search: currPos<down>: (1,9).
+search: down: 'j' found at (1,9).
+search: down: 'j' found at (2,9).
+search: down: 'j' found at (3,9).
+search: down: 'j' found at (4,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: <jjjjjjjjjj> found.
+search: currPos<right>: (9,10).
+search: ...backtracking: (9,9).
+search: currPos<down>: (10,9).
+search: ...backtracking: (9,9).
+search: currPos<left>: (9,8).
+search: ...backtracking: (9,9).
+search: currPos<up>: (8,9).
+search: ...backtracking: (9,9).
+search: currPos<left>: (0,8).
+search: ...backtracking: (0,9).
+search: currPos<up>: (-1,9).
+search: ...backtracking: (0,9).
+search: currPos: (1,0): 'j' not found.
+search: currPos: (1,1): 'j' not found.
+search: currPos: (1,2): 'j' not found.
+search: currPos: (1,3): 'j' not found.
+search: currPos: (1,4): 'j' not found.
+search: currPos: (1,5): 'j' not found.
+search: currPos: (1,6): 'j' not found.
+search: currPos: (1,7): 'j' not found.
+search: currPos: (1,8): 'j' not found.
+search: currPos: (1,9): 'j' found.
+search: currPos<right>: (1,10).
+search: ...backtracking: (1,9).
+search: currPos<down>: (2,9).
+search: down: 'j' found at (2,9).
+search: down: 'j' found at (3,9).
+search: down: 'j' found at (4,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (1,9).
+search: currPos<left>: (1,8).
+search: ...backtracking: (1,9).
+search: currPos<up>: (0,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (1,9).
+search: currPos: (2,0): 'j' not found.
+search: currPos: (2,1): 'j' not found.
+search: currPos: (2,2): 'j' not found.
+search: currPos: (2,3): 'j' not found.
+search: currPos: (2,4): 'j' not found.
+search: currPos: (2,5): 'j' not found.
+search: currPos: (2,6): 'j' not found.
+search: currPos: (2,7): 'j' not found.
+search: currPos: (2,8): 'j' not found.
+search: currPos: (2,9): 'j' found.
+search: currPos<right>: (2,10).
+search: ...backtracking: (2,9).
+search: currPos<down>: (3,9).
+search: down: 'j' found at (3,9).
+search: down: 'j' found at (4,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (2,9).
+search: currPos<left>: (2,8).
+search: ...backtracking: (2,9).
+search: currPos<up>: (1,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (2,9).
+search: currPos: (3,0): 'j' not found.
+search: currPos: (3,1): 'j' not found.
+search: currPos: (3,2): 'j' not found.
+search: currPos: (3,3): 'j' not found.
+search: currPos: (3,4): 'j' not found.
+search: currPos: (3,5): 'j' not found.
+search: currPos: (3,6): 'j' not found.
+search: currPos: (3,7): 'j' not found.
+search: currPos: (3,8): 'j' not found.
+search: currPos: (3,9): 'j' found.
+search: currPos<right>: (3,10).
+search: ...backtracking: (3,9).
+search: currPos<down>: (4,9).
+search: down: 'j' found at (4,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (3,9).
+search: currPos<left>: (3,8).
+search: ...backtracking: (3,9).
+search: currPos<up>: (2,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (3,9).
+search: currPos: (4,0): 'j' not found.
+search: currPos: (4,1): 'j' not found.
+search: currPos: (4,2): 'j' not found.
+search: currPos: (4,3): 'j' not found.
+search: currPos: (4,4): 'j' not found.
+search: currPos: (4,5): 'j' not found.
+search: currPos: (4,6): 'j' not found.
+search: currPos: (4,7): 'j' not found.
+search: currPos: (4,8): 'j' not found.
+search: currPos: (4,9): 'j' found.
+search: currPos<right>: (4,10).
+search: ...backtracking: (4,9).
+search: currPos<down>: (5,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (4,9).
+search: currPos<left>: (4,8).
+search: ...backtracking: (4,9).
+search: currPos<up>: (3,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (4,9).
+search: currPos: (5,0): 'j' not found.
+search: currPos: (5,1): 'j' not found.
+search: currPos: (5,2): 'j' not found.
+search: currPos: (5,3): 'j' not found.
+search: currPos: (5,4): 'j' not found.
+search: currPos: (5,5): 'j' not found.
+search: currPos: (5,6): 'j' not found.
+search: currPos: (5,7): 'j' not found.
+search: currPos: (5,8): 'j' not found.
+search: currPos: (5,9): 'j' found.
+search: currPos<right>: (5,10).
+search: ...backtracking: (5,9).
+search: currPos<down>: (6,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (5,9).
+search: currPos<left>: (5,8).
+search: ...backtracking: (5,9).
+search: currPos<up>: (4,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (5,9).
+search: currPos: (6,0): 'j' not found.
+search: currPos: (6,1): 'j' not found.
+search: currPos: (6,2): 'j' not found.
+search: currPos: (6,3): 'j' not found.
+search: currPos: (6,4): 'j' not found.
+search: currPos: (6,5): 'j' not found.
+search: currPos: (6,6): 'j' not found.
+search: currPos: (6,7): 'j' not found.
+search: currPos: (6,8): 'j' not found.
+search: currPos: (6,9): 'j' found.
+search: currPos<right>: (6,10).
+search: ...backtracking: (6,9).
+search: currPos<down>: (7,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (6,9).
+search: currPos<left>: (6,8).
+search: ...backtracking: (6,9).
+search: currPos<up>: (5,9).
+search: up: 'j' found at (5,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (6,9).
+search: currPos: (7,0): 'j' not found.
+search: currPos: (7,1): 'j' not found.
+search: currPos: (7,2): 'j' not found.
+search: currPos: (7,3): 'j' not found.
+search: currPos: (7,4): 'j' not found.
+search: currPos: (7,5): 'j' not found.
+search: currPos: (7,6): 'j' not found.
+search: currPos: (7,7): 'j' not found.
+search: currPos: (7,8): 'j' not found.
+search: currPos: (7,9): 'j' found.
+search: currPos<right>: (7,10).
+search: ...backtracking: (7,9).
+search: currPos<down>: (8,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (7,9).
+search: currPos<left>: (7,8).
+search: ...backtracking: (7,9).
+search: currPos<up>: (6,9).
+search: up: 'j' found at (6,9).
+search: up: 'j' found at (5,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (7,9).
+search: currPos: (8,0): 'j' not found.
+search: currPos: (8,1): 'j' not found.
+search: currPos: (8,2): 'j' not found.
+search: currPos: (8,3): 'j' not found.
+search: currPos: (8,4): 'j' not found.
+search: currPos: (8,5): 'j' not found.
+search: currPos: (8,6): 'j' not found.
+search: currPos: (8,7): 'j' not found.
+search: currPos: (8,8): 'j' not found.
+search: currPos: (8,9): 'j' found.
+search: currPos<right>: (8,10).
+search: ...backtracking: (8,9).
+search: currPos<down>: (9,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (8,9).
+search: currPos<left>: (8,8).
+search: ...backtracking: (8,9).
+search: currPos<up>: (7,9).
+search: up: 'j' found at (7,9).
+search: up: 'j' found at (6,9).
+search: up: 'j' found at (5,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (8,9).
+search: currPos: (9,0): 'j' not found.
+search: currPos: (9,1): 'j' not found.
+search: currPos: (9,2): 'j' not found.
+search: currPos: (9,3): 'j' not found.
+search: currPos: (9,4): 'j' not found.
+search: currPos: (9,5): 'j' not found.
+search: currPos: (9,6): 'j' not found.
+search: currPos: (9,7): 'j' not found.
+search: currPos: (9,8): 'j' not found.
+search: currPos: (9,9): 'j' found.
+search: currPos<right>: (9,10).
+search: ...backtracking: (9,9).
+search: currPos<down>: (10,9).
+search: ...backtracking: (9,9).
+search: currPos<left>: (9,8).
+search: ...backtracking: (9,9).
+search: currPos<up>: (8,9).
+search: up: 'j' found at (8,9).
+search: up: 'j' found at (7,9).
+search: up: 'j' found at (6,9).
+search: up: 'j' found at (5,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: <jjjjjjjjjj> found.
+search: currPos<right>: (0,10).
+search: ...backtracking: (0,9).
+search: currPos<down>: (1,9).
+search: ...backtracking: (0,9).
+search: currPos<left>: (0,8).
+search: left: 'i' found at (0,8).
+search: <i> found.
+search: currPos<right>: (0,9).
+search: ...backtracking: (0,8).
+search: currPos<down>: (1,8).
+search: down: 'a' found at (1,8).
+search: <a> found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: down: 't' found at (2,8).
+search: down: 'y' found at (3,8).
+search: down: 'p' found at (4,8).
+search: down: 'e' found at (5,8).
+search: down: 's' found at (6,8).
+search: <types> found.
+search: currPos<right>: (6,9).
+search: ...backtracking: (6,8).
+search: currPos<down>: (7,8).
+search: down: 'a' found at (7,8).
+search: down: 'r' found at (8,8).
+search: down: 'e' found at (9,8).
+search: <are> found.
+search: SUCCESS!: 'jjjjjjjjjj i a types are' found!
+Phrase Coordinates for: 'jjjjjjjjjj i a types are'.
+word coordinate: jjjjjjjjjj: <9,9> to <0,9>.
+word coordinate: i: <0,8> to <0,8>.
+word coordinate: a: <1,8> to <1,8>.
+word coordinate: types: <2,8> to <6,8>.
+word coordinate: are: <7,8> to <9,8>.
+End coordinates.
+Phrase Found Table for: 'jjjjjjjjjj i a types are':
+
+a b s t r a c t I J 
+a t a d t d a t A J 
+t b c d c a g h T J 
+y b c d a t g h Y J 
+p b c d r a g h P J 
+e b c d t f t h E J 
+s a r e s f a h S J 
+a r e d b f e h A J 
+r b c d a f n h R J 
+e r e a l l y r E J 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: jjjjjjjjjj i a types are j
+Search word/phrase is valid. Number of words in phrase is: 6
+Start search at (0,0).
+search: currPos: (0,0): 'j' not found.
+search: currPos: (0,1): 'j' not found.
+search: currPos: (0,2): 'j' not found.
+search: currPos: (0,3): 'j' not found.
+search: currPos: (0,4): 'j' not found.
+search: currPos: (0,5): 'j' not found.
+search: currPos: (0,6): 'j' not found.
+search: currPos: (0,7): 'j' not found.
+search: currPos: (0,8): 'j' not found.
+search: currPos: (0,9): 'j' found.
+search: currPos<right>: (0,10).
+search: ...backtracking: (0,9).
+search: currPos<down>: (1,9).
+search: down: 'j' found at (1,9).
+search: down: 'j' found at (2,9).
+search: down: 'j' found at (3,9).
+search: down: 'j' found at (4,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: <jjjjjjjjjj> found.
+search: currPos<right>: (9,10).
+search: ...backtracking: (9,9).
+search: currPos<down>: (10,9).
+search: ...backtracking: (9,9).
+search: currPos<left>: (9,8).
+search: ...backtracking: (9,9).
+search: currPos<up>: (8,9).
+search: ...backtracking: (9,9).
+search: currPos<left>: (0,8).
+search: ...backtracking: (0,9).
+search: currPos<up>: (-1,9).
+search: ...backtracking: (0,9).
+search: currPos: (1,0): 'j' not found.
+search: currPos: (1,1): 'j' not found.
+search: currPos: (1,2): 'j' not found.
+search: currPos: (1,3): 'j' not found.
+search: currPos: (1,4): 'j' not found.
+search: currPos: (1,5): 'j' not found.
+search: currPos: (1,6): 'j' not found.
+search: currPos: (1,7): 'j' not found.
+search: currPos: (1,8): 'j' not found.
+search: currPos: (1,9): 'j' found.
+search: currPos<right>: (1,10).
+search: ...backtracking: (1,9).
+search: currPos<down>: (2,9).
+search: down: 'j' found at (2,9).
+search: down: 'j' found at (3,9).
+search: down: 'j' found at (4,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (1,9).
+search: currPos<left>: (1,8).
+search: ...backtracking: (1,9).
+search: currPos<up>: (0,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (1,9).
+search: currPos: (2,0): 'j' not found.
+search: currPos: (2,1): 'j' not found.
+search: currPos: (2,2): 'j' not found.
+search: currPos: (2,3): 'j' not found.
+search: currPos: (2,4): 'j' not found.
+search: currPos: (2,5): 'j' not found.
+search: currPos: (2,6): 'j' not found.
+search: currPos: (2,7): 'j' not found.
+search: currPos: (2,8): 'j' not found.
+search: currPos: (2,9): 'j' found.
+search: currPos<right>: (2,10).
+search: ...backtracking: (2,9).
+search: currPos<down>: (3,9).
+search: down: 'j' found at (3,9).
+search: down: 'j' found at (4,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (2,9).
+search: currPos<left>: (2,8).
+search: ...backtracking: (2,9).
+search: currPos<up>: (1,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (2,9).
+search: currPos: (3,0): 'j' not found.
+search: currPos: (3,1): 'j' not found.
+search: currPos: (3,2): 'j' not found.
+search: currPos: (3,3): 'j' not found.
+search: currPos: (3,4): 'j' not found.
+search: currPos: (3,5): 'j' not found.
+search: currPos: (3,6): 'j' not found.
+search: currPos: (3,7): 'j' not found.
+search: currPos: (3,8): 'j' not found.
+search: currPos: (3,9): 'j' found.
+search: currPos<right>: (3,10).
+search: ...backtracking: (3,9).
+search: currPos<down>: (4,9).
+search: down: 'j' found at (4,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (3,9).
+search: currPos<left>: (3,8).
+search: ...backtracking: (3,9).
+search: currPos<up>: (2,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (3,9).
+search: currPos: (4,0): 'j' not found.
+search: currPos: (4,1): 'j' not found.
+search: currPos: (4,2): 'j' not found.
+search: currPos: (4,3): 'j' not found.
+search: currPos: (4,4): 'j' not found.
+search: currPos: (4,5): 'j' not found.
+search: currPos: (4,6): 'j' not found.
+search: currPos: (4,7): 'j' not found.
+search: currPos: (4,8): 'j' not found.
+search: currPos: (4,9): 'j' found.
+search: currPos<right>: (4,10).
+search: ...backtracking: (4,9).
+search: currPos<down>: (5,9).
+search: down: 'j' found at (5,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (4,9).
+search: currPos<left>: (4,8).
+search: ...backtracking: (4,9).
+search: currPos<up>: (3,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (4,9).
+search: currPos: (5,0): 'j' not found.
+search: currPos: (5,1): 'j' not found.
+search: currPos: (5,2): 'j' not found.
+search: currPos: (5,3): 'j' not found.
+search: currPos: (5,4): 'j' not found.
+search: currPos: (5,5): 'j' not found.
+search: currPos: (5,6): 'j' not found.
+search: currPos: (5,7): 'j' not found.
+search: currPos: (5,8): 'j' not found.
+search: currPos: (5,9): 'j' found.
+search: currPos<right>: (5,10).
+search: ...backtracking: (5,9).
+search: currPos<down>: (6,9).
+search: down: 'j' found at (6,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (5,9).
+search: currPos<left>: (5,8).
+search: ...backtracking: (5,9).
+search: currPos<up>: (4,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (5,9).
+search: currPos: (6,0): 'j' not found.
+search: currPos: (6,1): 'j' not found.
+search: currPos: (6,2): 'j' not found.
+search: currPos: (6,3): 'j' not found.
+search: currPos: (6,4): 'j' not found.
+search: currPos: (6,5): 'j' not found.
+search: currPos: (6,6): 'j' not found.
+search: currPos: (6,7): 'j' not found.
+search: currPos: (6,8): 'j' not found.
+search: currPos: (6,9): 'j' found.
+search: currPos<right>: (6,10).
+search: ...backtracking: (6,9).
+search: currPos<down>: (7,9).
+search: down: 'j' found at (7,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (6,9).
+search: currPos<left>: (6,8).
+search: ...backtracking: (6,9).
+search: currPos<up>: (5,9).
+search: up: 'j' found at (5,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (6,9).
+search: currPos: (7,0): 'j' not found.
+search: currPos: (7,1): 'j' not found.
+search: currPos: (7,2): 'j' not found.
+search: currPos: (7,3): 'j' not found.
+search: currPos: (7,4): 'j' not found.
+search: currPos: (7,5): 'j' not found.
+search: currPos: (7,6): 'j' not found.
+search: currPos: (7,7): 'j' not found.
+search: currPos: (7,8): 'j' not found.
+search: currPos: (7,9): 'j' found.
+search: currPos<right>: (7,10).
+search: ...backtracking: (7,9).
+search: currPos<down>: (8,9).
+search: down: 'j' found at (8,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (7,9).
+search: currPos<left>: (7,8).
+search: ...backtracking: (7,9).
+search: currPos<up>: (6,9).
+search: up: 'j' found at (6,9).
+search: up: 'j' found at (5,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (7,9).
+search: currPos: (8,0): 'j' not found.
+search: currPos: (8,1): 'j' not found.
+search: currPos: (8,2): 'j' not found.
+search: currPos: (8,3): 'j' not found.
+search: currPos: (8,4): 'j' not found.
+search: currPos: (8,5): 'j' not found.
+search: currPos: (8,6): 'j' not found.
+search: currPos: (8,7): 'j' not found.
+search: currPos: (8,8): 'j' not found.
+search: currPos: (8,9): 'j' found.
+search: currPos<right>: (8,10).
+search: ...backtracking: (8,9).
+search: currPos<down>: (9,9).
+search: down: 'j' found at (9,9).
+search: ...backtracking: (8,9).
+search: currPos<left>: (8,8).
+search: ...backtracking: (8,9).
+search: currPos<up>: (7,9).
+search: up: 'j' found at (7,9).
+search: up: 'j' found at (6,9).
+search: up: 'j' found at (5,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: ...backtracking: (8,9).
+search: currPos: (9,0): 'j' not found.
+search: currPos: (9,1): 'j' not found.
+search: currPos: (9,2): 'j' not found.
+search: currPos: (9,3): 'j' not found.
+search: currPos: (9,4): 'j' not found.
+search: currPos: (9,5): 'j' not found.
+search: currPos: (9,6): 'j' not found.
+search: currPos: (9,7): 'j' not found.
+search: currPos: (9,8): 'j' not found.
+search: currPos: (9,9): 'j' found.
+search: currPos<right>: (9,10).
+search: ...backtracking: (9,9).
+search: currPos<down>: (10,9).
+search: ...backtracking: (9,9).
+search: currPos<left>: (9,8).
+search: ...backtracking: (9,9).
+search: currPos<up>: (8,9).
+search: up: 'j' found at (8,9).
+search: up: 'j' found at (7,9).
+search: up: 'j' found at (6,9).
+search: up: 'j' found at (5,9).
+search: up: 'j' found at (4,9).
+search: up: 'j' found at (3,9).
+search: up: 'j' found at (2,9).
+search: up: 'j' found at (1,9).
+search: up: 'j' found at (0,9).
+search: <jjjjjjjjjj> found.
+search: currPos<right>: (0,10).
+search: ...backtracking: (0,9).
+search: currPos<down>: (1,9).
+search: ...backtracking: (0,9).
+search: currPos<left>: (0,8).
+search: left: 'i' found at (0,8).
+search: <i> found.
+search: currPos<right>: (0,9).
+search: ...backtracking: (0,8).
+search: currPos<down>: (1,8).
+search: down: 'a' found at (1,8).
+search: <a> found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: down: 't' found at (2,8).
+search: down: 'y' found at (3,8).
+search: down: 'p' found at (4,8).
+search: down: 'e' found at (5,8).
+search: down: 's' found at (6,8).
+search: <types> found.
+search: currPos<right>: (6,9).
+search: ...backtracking: (6,8).
+search: currPos<down>: (7,8).
+search: down: 'a' found at (7,8).
+search: down: 'r' found at (8,8).
+search: down: 'e' found at (9,8).
+search: <are> found.
+search: currPos<right>: (9,9).
+search: right: 'j' found at (9,9).
+search: overlap...backtracking: (9,8).
+search: currPos<down>: (10,8).
+search: ...backtracking: (9,8).
+search: currPos<left>: (9,7).
+search: ...backtracking: (9,8).
+search: currPos<up>: (8,8).
+search: ...backtracking: (9,8).
+search: currPos<left>: (6,7).
+search: ...backtracking: (6,8).
+search: currPos<up>: (5,8).
+search: ...backtracking: (6,8).
+search: currPos<left>: (1,7).
+search: left: 't' found at (1,7).
+search: ...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos<left>: (0,7).
+search: ...backtracking: (0,8).
+search: currPos<up>: (-1,8).
+search: ...backtracking: (0,8).
+search: currPos<up>: (-1,9).
+search: ...backtracking: (0,9).
+search: FAILED!: 'jjjjjjjjjj i a types are j' not found!
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: ab t a
+Search word/phrase is valid. Number of words in phrase is: 3
+Start search at (0,0).
+search: currPos: (0,0): 'a' found.
+search: currPos<right>: (0,1).
+search: right: 'b' found at (0,1).
+search: <ab> found.
+search: currPos<right>: (0,2).
+search: ...backtracking: (0,1).
+search: currPos<down>: (1,1).
+search: down: 't' found at (1,1).
+search: <t> found.
+search: currPos<right>: (1,2).
+search: right: 'a' found at (1,2).
+search: <a> found.
+search: SUCCESS!: 'ab t a' found!
+Phrase Coordinates for: 'ab t a'.
+word coordinate: ab: <0,0> to <0,1>.
+word coordinate: t: <1,1> to <1,1>.
+word coordinate: a: <1,2> to <1,2>.
+End coordinates.
+Phrase Found Table for: 'ab t a':
+
+A B s t r a c t i j 
+a T A d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: ab t a s
+Search word/phrase is valid. Number of words in phrase is: 4
+Start search at (0,0).
+search: currPos: (0,0): 'a' found.
+search: currPos<right>: (0,1).
+search: right: 'b' found at (0,1).
+search: <ab> found.
+search: currPos<right>: (0,2).
+search: ...backtracking: (0,1).
+search: currPos<down>: (1,1).
+search: down: 't' found at (1,1).
+search: <t> found.
+search: currPos<right>: (1,2).
+search: right: 'a' found at (1,2).
+search: <a> found.
+search: currPos<right>: (1,3).
+search: ...backtracking: (1,2).
+search: currPos<down>: (2,2).
+search: ...backtracking: (1,2).
+search: currPos<left>: (1,1).
+search: ...backtracking: (1,2).
+search: currPos<up>: (0,2).
+search: up: 's' found at (0,2).
+search: <s> found.
+search: SUCCESS!: 'ab t a s' found!
+Phrase Coordinates for: 'ab t a s'.
+word coordinate: ab: <0,0> to <0,1>.
+word coordinate: t: <1,1> to <1,1>.
+word coordinate: a: <1,2> to <1,2>.
+word coordinate: s: <0,2> to <0,2>.
+End coordinates.
+Phrase Found Table for: 'ab t a s':
+
+A B S t r a c t i j 
+a T A d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: ab t a s b
+Search word/phrase is valid. Number of words in phrase is: 5
+Start search at (0,0).
+search: currPos: (0,0): 'a' found.
+search: currPos<right>: (0,1).
+search: right: 'b' found at (0,1).
+search: <ab> found.
+search: currPos<right>: (0,2).
+search: ...backtracking: (0,1).
+search: currPos<down>: (1,1).
+search: down: 't' found at (1,1).
+search: <t> found.
+search: currPos<right>: (1,2).
+search: right: 'a' found at (1,2).
+search: <a> found.
+search: currPos<right>: (1,3).
+search: ...backtracking: (1,2).
+search: currPos<down>: (2,2).
+search: ...backtracking: (1,2).
+search: currPos<left>: (1,1).
+search: ...backtracking: (1,2).
+search: currPos<up>: (0,2).
+search: up: 's' found at (0,2).
+search: <s> found.
+search: currPos<right>: (0,3).
+search: ...backtracking: (0,2).
+search: currPos<down>: (1,2).
+search: ...backtracking: (0,2).
+search: currPos<left>: (0,1).
+search: left: 'b' found at (0,1).
+search: overlap...backtracking: (0,2).
+search: currPos<up>: (-1,2).
+search: ...backtracking: (0,2).
+search: currPos<down>: (2,1).
+search: ...backtracking: (1,1).
+search: currPos<left>: (1,0).
+search: left: 'a' found at (1,0).
+search: <a> found.
+search: currPos<right>: (1,1).
+search: ...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: ...backtracking: (1,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,1).
+search: ...backtracking: (1,1).
+search: currPos<left>: (0,0).
+search: ...backtracking: (0,1).
+search: currPos<up>: (-1,1).
+search: ...backtracking: (0,1).
+search: currPos<down>: (1,0).
+search: ...backtracking: (0,0).
+search: currPos<left>: (0,-1).
+search: ...backtracking: (0,0).
+search: currPos<up>: (-1,0).
+search: ...backtracking: (0,0).
+search: currPos: (0,1): 'a' not found.
+search: currPos: (0,2): 'a' not found.
+search: currPos: (0,3): 'a' not found.
+search: currPos: (0,4): 'a' not found.
+search: currPos: (0,5): 'a' found.
+search: currPos<right>: (0,6).
+search: ...backtracking: (0,5).
+search: currPos<down>: (1,5).
+search: ...backtracking: (0,5).
+search: currPos<left>: (0,4).
+search: ...backtracking: (0,5).
+search: currPos<up>: (-1,5).
+search: ...backtracking: (0,5).
+search: currPos: (0,6): 'a' not found.
+search: currPos: (0,7): 'a' not found.
+search: currPos: (0,8): 'a' not found.
+search: currPos: (0,9): 'a' not found.
+search: currPos: (1,0): 'a' found.
+search: currPos<right>: (1,1).
+search: ...backtracking: (1,0).
+search: currPos<down>: (2,0).
+search: ...backtracking: (1,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos: (1,1): 'a' not found.
+search: currPos: (1,2): 'a' found.
+search: currPos<right>: (1,3).
+search: ...backtracking: (1,2).
+search: currPos<down>: (2,2).
+search: ...backtracking: (1,2).
+search: currPos<left>: (1,1).
+search: ...backtracking: (1,2).
+search: currPos<up>: (0,2).
+search: ...backtracking: (1,2).
+search: currPos: (1,3): 'a' not found.
+search: currPos: (1,4): 'a' not found.
+search: currPos: (1,5): 'a' not found.
+search: currPos: (1,6): 'a' found.
+search: currPos<right>: (1,7).
+search: ...backtracking: (1,6).
+search: currPos<down>: (2,6).
+search: ...backtracking: (1,6).
+search: currPos<left>: (1,5).
+search: ...backtracking: (1,6).
+search: currPos<up>: (0,6).
+search: ...backtracking: (1,6).
+search: currPos: (1,7): 'a' not found.
+search: currPos: (1,8): 'a' found.
+search: currPos<right>: (1,9).
+search: ...backtracking: (1,8).
+search: currPos<down>: (2,8).
+search: ...backtracking: (1,8).
+search: currPos<left>: (1,7).
+search: ...backtracking: (1,8).
+search: currPos<up>: (0,8).
+search: ...backtracking: (1,8).
+search: currPos: (1,9): 'a' not found.
+search: currPos: (2,0): 'a' not found.
+search: currPos: (2,1): 'a' not found.
+search: currPos: (2,2): 'a' not found.
+search: currPos: (2,3): 'a' not found.
+search: currPos: (2,4): 'a' not found.
+search: currPos: (2,5): 'a' found.
+search: currPos<right>: (2,6).
+search: ...backtracking: (2,5).
+search: currPos<down>: (3,5).
+search: ...backtracking: (2,5).
+search: currPos<left>: (2,4).
+search: ...backtracking: (2,5).
+search: currPos<up>: (1,5).
+search: ...backtracking: (2,5).
+search: currPos: (2,6): 'a' not found.
+search: currPos: (2,7): 'a' not found.
+search: currPos: (2,8): 'a' not found.
+search: currPos: (2,9): 'a' not found.
+search: currPos: (3,0): 'a' not found.
+search: currPos: (3,1): 'a' not found.
+search: currPos: (3,2): 'a' not found.
+search: currPos: (3,3): 'a' not found.
+search: currPos: (3,4): 'a' found.
+search: currPos<right>: (3,5).
+search: ...backtracking: (3,4).
+search: currPos<down>: (4,4).
+search: ...backtracking: (3,4).
+search: currPos<left>: (3,3).
+search: ...backtracking: (3,4).
+search: currPos<up>: (2,4).
+search: ...backtracking: (3,4).
+search: currPos: (3,5): 'a' not found.
+search: currPos: (3,6): 'a' not found.
+search: currPos: (3,7): 'a' not found.
+search: currPos: (3,8): 'a' not found.
+search: currPos: (3,9): 'a' not found.
+search: currPos: (4,0): 'a' not found.
+search: currPos: (4,1): 'a' not found.
+search: currPos: (4,2): 'a' not found.
+search: currPos: (4,3): 'a' not found.
+search: currPos: (4,4): 'a' not found.
+search: currPos: (4,5): 'a' found.
+search: currPos<right>: (4,6).
+search: ...backtracking: (4,5).
+search: currPos<down>: (5,5).
+search: ...backtracking: (4,5).
+search: currPos<left>: (4,4).
+search: ...backtracking: (4,5).
+search: currPos<up>: (3,5).
+search: ...backtracking: (4,5).
+search: currPos: (4,6): 'a' not found.
+search: currPos: (4,7): 'a' not found.
+search: currPos: (4,8): 'a' not found.
+search: currPos: (4,9): 'a' not found.
+search: currPos: (5,0): 'a' not found.
+search: currPos: (5,1): 'a' not found.
+search: currPos: (5,2): 'a' not found.
+search: currPos: (5,3): 'a' not found.
+search: currPos: (5,4): 'a' not found.
+search: currPos: (5,5): 'a' not found.
+search: currPos: (5,6): 'a' not found.
+search: currPos: (5,7): 'a' not found.
+search: currPos: (5,8): 'a' not found.
+search: currPos: (5,9): 'a' not found.
+search: currPos: (6,0): 'a' not found.
+search: currPos: (6,1): 'a' found.
+search: currPos<right>: (6,2).
+search: ...backtracking: (6,1).
+search: currPos<down>: (7,1).
+search: ...backtracking: (6,1).
+search: currPos<left>: (6,0).
+search: ...backtracking: (6,1).
+search: currPos<up>: (5,1).
+search: up: 'b' found at (5,1).
+search: <ab> found.
+search: currPos<right>: (5,2).
+search: ...backtracking: (5,1).
+search: currPos<down>: (6,1).
+search: ...backtracking: (5,1).
+search: currPos<left>: (5,0).
+search: ...backtracking: (5,1).
+search: currPos<up>: (4,1).
+search: ...backtracking: (5,1).
+search: currPos: (5,2): 'a' not found.
+search: currPos: (5,3): 'a' not found.
+search: currPos: (5,4): 'a' not found.
+search: currPos: (5,5): 'a' not found.
+search: currPos: (5,6): 'a' not found.
+search: currPos: (5,7): 'a' not found.
+search: currPos: (5,8): 'a' not found.
+search: currPos: (5,9): 'a' not found.
+search: currPos: (7,0): 'a' found.
+search: currPos<right>: (7,1).
+search: ...backtracking: (7,0).
+search: currPos<down>: (8,0).
+search: ...backtracking: (7,0).
+search: currPos<left>: (7,-1).
+search: ...backtracking: (7,0).
+search: currPos<up>: (6,0).
+search: ...backtracking: (7,0).
+search: currPos: (7,1): 'a' not found.
+search: currPos: (7,2): 'a' not found.
+search: currPos: (7,3): 'a' not found.
+search: currPos: (7,4): 'a' not found.
+search: currPos: (7,5): 'a' not found.
+search: currPos: (7,6): 'a' not found.
+search: currPos: (7,7): 'a' not found.
+search: currPos: (7,8): 'a' found.
+search: currPos<right>: (7,9).
+search: ...backtracking: (7,8).
+search: currPos<down>: (8,8).
+search: ...backtracking: (7,8).
+search: currPos<left>: (7,7).
+search: ...backtracking: (7,8).
+search: currPos<up>: (6,8).
+search: ...backtracking: (7,8).
+search: currPos: (7,9): 'a' not found.
+search: currPos: (8,0): 'a' not found.
+search: currPos: (8,1): 'a' not found.
+search: currPos: (8,2): 'a' not found.
+search: currPos: (8,3): 'a' not found.
+search: currPos: (8,4): 'a' found.
+search: currPos<right>: (8,5).
+search: ...backtracking: (8,4).
+search: currPos<down>: (9,4).
+search: ...backtracking: (8,4).
+search: currPos<left>: (8,3).
+search: ...backtracking: (8,4).
+search: currPos<up>: (7,4).
+search: up: 'b' found at (7,4).
+search: <ab> found.
+search: currPos<right>: (7,5).
+search: ...backtracking: (7,4).
+search: currPos<down>: (8,4).
+search: ...backtracking: (7,4).
+search: currPos<left>: (7,3).
+search: ...backtracking: (7,4).
+search: currPos<up>: (6,4).
+search: ...backtracking: (7,4).
+search: currPos: (7,5): 'a' not found.
+search: currPos: (7,6): 'a' not found.
+search: currPos: (7,7): 'a' not found.
+search: currPos: (7,8): 'a' found.
+search: currPos<right>: (7,9).
+search: ...backtracking: (7,8).
+search: currPos<down>: (8,8).
+search: ...backtracking: (7,8).
+search: currPos<left>: (7,7).
+search: ...backtracking: (7,8).
+search: currPos<up>: (6,8).
+search: ...backtracking: (7,8).
+search: currPos: (7,9): 'a' not found.
+search: currPos: (9,0): 'a' not found.
+search: currPos: (9,1): 'a' not found.
+search: currPos: (9,2): 'a' not found.
+search: currPos: (9,3): 'a' found.
+search: currPos<right>: (9,4).
+search: ...backtracking: (9,3).
+search: currPos<down>: (10,3).
+search: ...backtracking: (9,3).
+search: currPos<left>: (9,2).
+search: ...backtracking: (9,3).
+search: currPos<up>: (8,3).
+search: ...backtracking: (9,3).
+search: currPos: (9,4): 'a' not found.
+search: currPos: (9,5): 'a' not found.
+search: currPos: (9,6): 'a' not found.
+search: currPos: (9,7): 'a' not found.
+search: currPos: (9,8): 'a' not found.
+search: currPos: (9,9): 'a' not found.
+search: FAILED!: 'ab t a s b' not found!
+
+a b s t r a c t i j 
+a t a d t d a t a j 
+t b c d c a g h t j 
+y b c d a t g h y j 
+p b c d r a g h p j 
+e b c d t f t h e j 
+s a r e s f a h s j 
+a r e d b f e h a j 
+r b c d a f n h r j 
+e r e a l l y r e j 
+
+Search word or phrase: /
+
+
+A single nonalphabetical character /has been entered: quitting program...
+
+~Thank you for running the Word Search Backtracking Program written by Demetrius Johnson!

@@ -1,0 +1,52 @@
+Welcome to the MST Test Program
+Output file: outMST2.txt
+Testing Default Scenario...
+File name for graph data: MST2.dat
+
+
+Number of vertices: 6 is valid
+Graph with 6 vertices and 7 edges will be created
+Number of input edges to process is: 7
+Edge Added: 0, 1, 4
+Edge Added: 1, 0, 4
+Edge Added: 2, 3, 4
+Edge Added: 3, 2, 4
+Edge Added: 1, 3, 2
+Edge Added: 3, 1, 2
+Edge Added: 0, 2, 3
+Edge Added: 2, 0, 3
+Edge Added: 4, 5, 6
+Edge Added: 5, 4, 6
+Edge Added: 1, 2, 1
+Edge Added: 2, 1, 1
+Edge Added: 3, 4, 2
+Edge Added: 4, 3, 2
+Full Graph - Adjacency List: 
+Adj[0]-> (1,4)(2,3)
+Adj[1]-> (0,4)(3,2)(2,1)
+Adj[2]-> (3,4)(0,3)(1,1)
+Adj[3]-> (2,4)(1,2)(4,2)
+Adj[4]-> (5,6)(3,2)
+Adj[5]-> (4,6)
+
+
+Number of vertices: 5 is valid
+Graph with 5 vertices and 5 edges will be created
+Number of input edges to process is: 5
+Edge Added: 0, 1, 1
+Edge Added: 1, 0, 1
+Edge Added: 1, 3, 5
+Edge Added: 3, 1, 5
+Edge Added: 3, 0, 3
+Edge Added: 0, 3, 3
+Edge Added: 2, 4, 1
+Edge Added: 4, 2, 1
+Edge Added: 3, 4, 6
+Edge Added: 4, 3, 6
+Full Graph - Adjacency List: 
+Adj[0]-> (1,1)(3,3)
+Adj[1]-> (0,1)(3,5)
+Adj[2]-> (4,1)
+Adj[3]-> (1,5)(0,3)(4,6)
+Adj[4]-> (2,1)(3,6)
+Thank you for running the MST Test Program written by Demetrius Johnson!

@@ -1,0 +1,30 @@
+**I used this file to help me easily copy and paste into CMD to run my program and to help remind me to refer to this for
+when I need to do something similar to this again in the future; this is my first time using CMD to run programs and redirect output. 
+
+PATH: 
+
+C:\Users\ferve\OneDrive\Documents\SUMMER 2021 CLASS FILES - MEECH\CIS 350\Projects\P2\Project2_Completed_DemetriusJohnson
+
+FILE NAME:
+
+CIS-350-Project2-DemetriusJohnson.exe
+
+CMD LINE ARGUMENTS:
+
+(NUM WORDS IN DICTIONARY, INPUT DICTIONARY TXT FILE, INPUT SPELL CHECK FILE)
+
+OPTIONS:
+ 341, 638669
+simple_dict.txt, american-english-huge.txt
+Test1_jabber.txt, Test2_odyssey.txt
+
+note: 
+
+use these commands in the command line arguments:
+
+ >[filename] to redirect output from cout to a file
+
+and
+
+2>[filename] to redirect output from cerr to a file
+

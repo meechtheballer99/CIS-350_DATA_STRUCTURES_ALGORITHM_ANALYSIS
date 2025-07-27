@@ -1,0 +1,19 @@
+brillig(1): 
+toves(1): toes stoves troves coves doves hoves loves moves roves toges tokes toles tomes tones topes tores toses totes tozes tovet 
+borogoves(3): 
+outgrabe(4): 
+Jubjub(8): 
+frumious(9): 
+manxome(12): 
+uffish(16): huffish muffish offish 
+tulgey(18): 
+snickersnack(22): 
+Callooh(28): 
+Callay(28): allay Cally Calla Calley Callan Callao Callas 
+brillig(31): 
+toves(31): toes stoves troves coves doves hoves loves moves roves toges tokes toles tomes tones topes tores toses totes tozes tovet 
+borogoves(33): 
+outgrabe(34): 
+
+
+~program has finished execution...

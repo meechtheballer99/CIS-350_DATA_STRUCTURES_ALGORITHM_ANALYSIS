@@ -1,0 +1,552 @@
+Welcome to the Backtracking Word Search Test Program
+Output file: breakoutput.txt
+
+
+Number of rows(4) and number of columns(8) is valid.
+WARNING: Uppercase letter in table input: 'T' in position [0][4]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'E' in position [0][5]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'S' in position [0][6]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [0][7]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [1][0]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [1][4]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'E' in position [1][5]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'S' in position [1][6]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [1][7]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'T' in position [3][0]. Converted to lowercase...
+WARNING: Uppercase letter in table input: 'S' in position [3][2]. Converted to lowercase...
+Test character table loaded successfully...Test table:
+
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Testing Default Scenario...searching for words/phrases:
+'test' and 'TEST', 'test test', 'Test TEST', and 'test negative'.
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: SUCCESS!: 'test' found!
+Phrase Coordinates for: 'test'.
+word coordinate: test: <0,0> to <0,3>.
+End coordinates.
+Phrase Found Table for: 'test':
+
+T E S T t e s t 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: SUCCESS!: 'test' found!
+Phrase Coordinates for: 'test'.
+word coordinate: test: <0,0> to <0,3>.
+End coordinates.
+Phrase Found Table for: 'test':
+
+T E S T t e s t 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: currPos<right>: (0,4).
+search: right: 't' found at (0,4).
+search: right: 'e' found at (0,5).
+search: right: 's' found at (0,6).
+search: right: 't' found at (0,7).
+search: <test> found.
+search: SUCCESS!: 'test test' found!
+Phrase Coordinates for: 'test test'.
+word coordinate: test: <0,0> to <0,3>.
+word coordinate: test: <0,4> to <0,7>.
+End coordinates.
+Phrase Found Table for: 'test test':
+
+T E S T T E S T 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: currPos<right>: (0,4).
+search: right: 't' found at (0,4).
+search: right: 'e' found at (0,5).
+search: right: 's' found at (0,6).
+search: right: 't' found at (0,7).
+search: <test> found.
+search: SUCCESS!: 'test test' found!
+Phrase Coordinates for: 'test test'.
+word coordinate: test: <0,0> to <0,3>.
+word coordinate: test: <0,4> to <0,7>.
+End coordinates.
+Phrase Found Table for: 'test test':
+
+T E S T T E S T 
+t e s t t e s t 
+t e s t t e s t 
+t e s t t e s t 
+
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'e' found at (0,1).
+search: right: 's' found at (0,2).
+search: right: 't' found at (0,3).
+search: <test> found.
+search: currPos<right>: (0,4).
+search: ...backtracking: (0,3).
+search: currPos<down>: (1,3).
+search: ...backtracking: (0,3).
+search: currPos<left>: (0,2).
+search: ...backtracking: (0,3).
+search: currPos<up>: (-1,3).
+search: ...backtracking: (0,3).
+search: currPos<down>: (1,0).
+search: ...backtracking: (0,0).
+search: currPos<left>: (0,-1).
+search: ...backtracking: (0,0).
+search: currPos<up>: (-1,0).
+search: ...backtracking: (0,0).
+search: currPos: (0,1): 't' not found.
+search: currPos: (0,2): 't' not found.
+search: currPos: (0,3): 't' found.
+search: currPos<right>: (0,4).
+search: ...backtracking: (0,3).
+search: currPos<down>: (1,3).
+search: ...backtracking: (0,3).
+search: currPos<left>: (0,2).
+search: ...backtracking: (0,3).
+search: currPos<up>: (-1,3).
+search: ...backtracking: (0,3).
+search: currPos: (0,4): 't' found.
+search: currPos<right>: (0,5).
+search: right: 'e' found at (0,5).
+search: right: 's' found at (0,6).
+search: right: 't' found at (0,7).
+search: <test> found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: ...backtracking: (0,7).
+search: currPos<left>: (0,6).
+search: ...backtracking: (0,7).
+search: currPos<up>: (-1,7).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,4).
+search: ...backtracking: (0,4).
+search: currPos<left>: (0,3).
+search: ...backtracking: (0,4).
+search: currPos<up>: (-1,4).
+search: ...backtracking: (0,4).
+search: currPos: (0,5): 't' not found.
+search: currPos: (0,6): 't' not found.
+search: currPos: (0,7): 't' found.
+search: currPos<right>: (0,8).
+search: ...backtracking: (0,7).
+search: currPos<down>: (1,7).
+search: ...backtracking: (0,7).
+search: currPos<left>: (0,6).
+search: ...backtracking: (0,7).
+search: currPos<up>: (-1,7).
+search: ...backtracking: (0,7).
+search: currPos: (1,0): 't' found.
+search: currPos<right>: (1,1).
+search: right: 'e' found at (1,1).
+search: right: 's' found at (1,2).
+search: right: 't' found at (1,3).
+search: <test> found.
+search: currPos<right>: (1,4).
+search: ...backtracking: (1,3).
+search: currPos<down>: (2,3).
+search: ...backtracking: (1,3).
+search: currPos<left>: (1,2).
+search: ...backtracking: (1,3).
+search: currPos<up>: (0,3).
+search: ...backtracking: (1,3).
+search: currPos<down>: (2,0).
+search: ...backtracking: (1,0).
+search: currPos<left>: (1,-1).
+search: ...backtracking: (1,0).
+search: currPos<up>: (0,0).
+search: ...backtracking: (1,0).
+search: currPos: (1,1): 't' not found.
+search: currPos: (1,2): 't' not found.
+search: currPos: (1,3): 't' found.
+search: currPos<right>: (1,4).
+search: ...backtracking: (1,3).
+search: currPos<down>: (2,3).
+search: ...backtracking: (1,3).
+search: currPos<left>: (1,2).
+search: ...backtracking: (1,3).
+search: currPos<up>: (0,3).
+search: ...backtracking: (1,3).
+search: currPos: (1,4): 't' found.
+search: currPos<right>: (1,5).
+search: right: 'e' found at (1,5).
+search: right: 's' found at (1,6).
+search: right: 't' found at (1,7).
+search: <test> found.
+search: currPos<right>: (1,8).
+search: ...backtracking: (1,7).
+search: currPos<down>: (2,7).
+search: ...backtracking: (1,7).
+search: currPos<left>: (1,6).
+search: ...backtracking: (1,7).
+search: currPos<up>: (0,7).
+search: ...backtracking: (1,7).
+search: currPos<down>: (2,4).
+search: ...backtracking: (1,4).
+search: currPos<left>: (1,3).
+search: ...backtracking: (1,4).
+search: currPos<up>: (0,4).
+search: ...backtracking: (1,4).
+search: currPos: (1,5): 't' not found.
+search: currPos: (1,6): 't' not found.
+search: currPos: (1,7): 't' found.
+search: currPos<right>: (1,8).
+search: ...backtracking: (1,7).
+search: currPos<down>: (2,7).
+search: ...backtracking: (1,7).
+search: currPos<left>: (1,6).
+search: ...backtracking: (1,7).
+search: currPos<up>: (0,7).
+search: ...backtracking: (1,7).
+search: currPos: (2,0): 't' found.
+search: currPos<right>: (2,1).
+search: right: 'e' found at (2,1).
+search: right: 's' found at (2,2).
+search: right: 't' found at (2,3).
+search: <test> found.
+search: currPos<right>: (2,4).
+search: ...backtracking: (2,3).
+search: currPos<down>: (3,3).
+search: ...backtracking: (2,3).
+search: currPos<left>: (2,2).
+search: ...backtracking: (2,3).
+search: currPos<up>: (1,3).
+search: ...backtracking: (2,3).
+search: currPos<down>: (3,0).
+search: ...backtracking: (2,0).
+search: currPos<left>: (2,-1).
+search: ...backtracking: (2,0).
+search: currPos<up>: (1,0).
+search: ...backtracking: (2,0).
+search: currPos: (2,1): 't' not found.
+search: currPos: (2,2): 't' not found.
+search: currPos: (2,3): 't' found.
+search: currPos<right>: (2,4).
+search: ...backtracking: (2,3).
+search: currPos<down>: (3,3).
+search: ...backtracking: (2,3).
+search: currPos<left>: (2,2).
+search: ...backtracking: (2,3).
+search: currPos<up>: (1,3).
+search: ...backtracking: (2,3).
+search: currPos: (2,4): 't' found.
+search: currPos<right>: (2,5).
+search: right: 'e' found at (2,5).
+search: right: 's' found at (2,6).
+search: right: 't' found at (2,7).
+search: <test> found.
+search: currPos<right>: (2,8).
+search: ...backtracking: (2,7).
+search: currPos<down>: (3,7).
+search: ...backtracking: (2,7).
+search: currPos<left>: (2,6).
+search: ...backtracking: (2,7).
+search: currPos<up>: (1,7).
+search: ...backtracking: (2,7).
+search: currPos<down>: (3,4).
+search: ...backtracking: (2,4).
+search: currPos<left>: (2,3).
+search: ...backtracking: (2,4).
+search: currPos<up>: (1,4).
+search: ...backtracking: (2,4).
+search: currPos: (2,5): 't' not found.
+search: currPos: (2,6): 't' not found.
+search: currPos: (2,7): 't' found.
+search: currPos<right>: (2,8).
+search: ...backtracking: (2,7).
+search: currPos<down>: (3,7).
+search: ...backtracking: (2,7).
+search: currPos<left>: (2,6).
+search: ...backtracking: (2,7).
+search: currPos<up>: (1,7).
+search: ...backtracking: (2,7).
+search: currPos: (3,0): 't' found.
+search: currPos<right>: (3,1).
+search: right: 'e' found at (3,1).
+search: right: 's' found at (3,2).
+search: right: 't' found at (3,3).
+search: <test> found.
+search: currPos<right>: (3,4).
+search: ...backtracking: (3,3).
+search: currPos<down>: (4,3).
+search: ...backtracking: (3,3).
+search: currPos<left>: (3,2).
+search: ...backtracking: (3,3).
+search: currPos<up>: (2,3).
+search: ...backtracking: (3,3).
+search: currPos<down>: (4,0).
+search: ...backtracking: (3,0).
+search: currPos<left>: (3,-1).
+search: ...backtracking: (3,0).
+search: currPos<up>: (2,0).
+search: ...backtracking: (3,0).
+search: currPos: (3,1): 't' not found.
+search: currPos: (3,2): 't' not found.
+search: currPos: (3,3): 't' found.
+search: currPos<right>: (3,4).
+search: ...backtracking: (3,3).
+search: currPos<down>: (4,3).
+search: ...backtracking: (3,3).
+search: currPos<left>: (3,2).
+search: ...backtracking: (3,3).
+search: currPos<up>: (2,3).
+search: ...backtracking: (3,3).
+search: currPos: (3,4): 't' found.
+search: currPos<right>: (3,5).
+search: right: 'e' found at (3,5).
+search: right: 's' found at (3,6).
+search: right: 't' found at (3,7).
+search: <test> found.
+search: currPos<right>: (3,8).
+search: ...backtracking: (3,7).
+search: currPos<down>: (4,7).
+search: ...backtracking: (3,7).
+search: currPos<left>: (3,6).
+search: ...backtracking: (3,7).
+search: currPos<up>: (2,7).
+search: ...backtracking: (3,7).
+search: currPos<down>: (4,4).
+search: ...backtracking: (3,4).
+search: currPos<left>: (3,3).
+search: ...backtracking: (3,4).
+search: currPos<up>: (2,4).
+search: ...backtracking: (3,4).
+search: currPos: (3,5): 't' not found.
+search: currPos: (3,6): 't' not found.
+search: currPos: (3,7): 't' found.
+search: currPos<right>: (3,8).
+search: ...backtracking: (3,7).
+search: currPos<down>: (4,7).
+search: ...backtracking: (3,7).
+search: currPos<left>: (3,6).
+search: ...backtracking: (3,7).
+search: currPos<up>: (2,7).
+search: ...backtracking: (3,7).
+search: FAILED!: 'test negative' not found!
+Default Test Scenario completed: success...
+
+File name for user input character table: breaktest.dat
+Input file openend successfully...attempting to build table...
+
+
+Number of rows(5) and number of columns(5) is valid.
+User input file 5x5 table loaded successfully...Program Launch Success - ready to search words.
+User table:
+
+t h e e s 
+e t e d v 
+g g s d v 
+g h s g h 
+g h s g h 
+
+Search word or phrase: the es ss gh hvvs
+Search word/phrase is valid. Number of words in phrase is: 5
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'h' found at (0,1).
+search: right: 'e' found at (0,2).
+search: <the> found.
+search: currPos<right>: (0,3).
+search: right: 'e' found at (0,3).
+search: right: 's' found at (0,4).
+search: <es> found.
+search: currPos<right>: (0,5).
+search: ...backtracking: (0,4).
+search: currPos<down>: (1,4).
+search: ...backtracking: (0,4).
+search: currPos<left>: (0,3).
+search: ...backtracking: (0,4).
+search: currPos<up>: (-1,4).
+search: ...backtracking: (0,4).
+search: currPos<down>: (1,2).
+search: down: 'e' found at (1,2).
+search: down: 's' found at (2,2).
+search: <es> found.
+search: currPos<right>: (2,3).
+search: ...backtracking: (2,2).
+search: currPos<down>: (3,2).
+search: down: 's' found at (3,2).
+search: down: 's' found at (4,2).
+search: <ss> found.
+search: currPos<right>: (4,3).
+search: right: 'g' found at (4,3).
+search: right: 'h' found at (4,4).
+search: <gh> found.
+search: currPos<right>: (4,5).
+search: ...backtracking: (4,4).
+search: currPos<down>: (5,4).
+search: ...backtracking: (4,4).
+search: currPos<left>: (4,3).
+search: ...backtracking: (4,4).
+search: currPos<up>: (3,4).
+search: up: 'h' found at (3,4).
+search: up: 'v' found at (2,4).
+search: up: 'v' found at (1,4).
+search: up: 's' found at (0,4).
+search: overlap...backtracking: (4,4).
+search: currPos<down>: (5,2).
+search: ...backtracking: (4,2).
+search: currPos<left>: (4,1).
+search: ...backtracking: (4,2).
+search: currPos<up>: (3,2).
+search: ...backtracking: (4,2).
+search: currPos<left>: (2,1).
+search: ...backtracking: (2,2).
+search: currPos<up>: (1,2).
+search: ...backtracking: (2,2).
+search: currPos<left>: (0,1).
+search: ...backtracking: (0,2).
+search: currPos<up>: (-1,2).
+search: ...backtracking: (0,2).
+search: currPos<down>: (1,0).
+search: ...backtracking: (0,0).
+search: currPos<left>: (0,-1).
+search: ...backtracking: (0,0).
+search: currPos<up>: (-1,0).
+search: ...backtracking: (0,0).
+search: currPos: (0,1): 't' not found.
+search: currPos: (0,2): 't' not found.
+search: currPos: (0,3): 't' not found.
+search: currPos: (0,4): 't' not found.
+search: currPos: (1,0): 't' not found.
+search: currPos: (1,1): 't' found.
+search: currPos<right>: (1,2).
+search: ...backtracking: (1,1).
+search: currPos<down>: (2,1).
+search: ...backtracking: (1,1).
+search: currPos<left>: (1,0).
+search: ...backtracking: (1,1).
+search: currPos<up>: (0,1).
+search: up: 'h' found at (0,1).
+search: ...backtracking: (1,1).
+search: currPos: (1,2): 't' not found.
+search: currPos: (1,3): 't' not found.
+search: currPos: (1,4): 't' not found.
+search: currPos: (2,0): 't' not found.
+search: currPos: (2,1): 't' not found.
+search: currPos: (2,2): 't' not found.
+search: currPos: (2,3): 't' not found.
+search: currPos: (2,4): 't' not found.
+search: currPos: (3,0): 't' not found.
+search: currPos: (3,1): 't' not found.
+search: currPos: (3,2): 't' not found.
+search: currPos: (3,3): 't' not found.
+search: currPos: (3,4): 't' not found.
+search: currPos: (4,0): 't' not found.
+search: currPos: (4,1): 't' not found.
+search: currPos: (4,2): 't' not found.
+search: currPos: (4,3): 't' not found.
+search: currPos: (4,4): 't' not found.
+search: FAILED!: 'the es ss gh hvvs' not found!
+
+t h e e s 
+e t e d v 
+g g s d v 
+g h s g h 
+g h s g h 
+
+Search word or phrase: the es ss gh hvv
+Search word/phrase is valid. Number of words in phrase is: 5
+Start search at (0,0).
+search: currPos: (0,0): 't' found.
+search: currPos<right>: (0,1).
+search: right: 'h' found at (0,1).
+search: right: 'e' found at (0,2).
+search: <the> found.
+search: currPos<right>: (0,3).
+search: right: 'e' found at (0,3).
+search: right: 's' found at (0,4).
+search: <es> found.
+search: currPos<right>: (0,5).
+search: ...backtracking: (0,4).
+search: currPos<down>: (1,4).
+search: ...backtracking: (0,4).
+search: currPos<left>: (0,3).
+search: ...backtracking: (0,4).
+search: currPos<up>: (-1,4).
+search: ...backtracking: (0,4).
+search: currPos<down>: (1,2).
+search: down: 'e' found at (1,2).
+search: down: 's' found at (2,2).
+search: <es> found.
+search: currPos<right>: (2,3).
+search: ...backtracking: (2,2).
+search: currPos<down>: (3,2).
+search: down: 's' found at (3,2).
+search: down: 's' found at (4,2).
+search: <ss> found.
+search: currPos<right>: (4,3).
+search: right: 'g' found at (4,3).
+search: right: 'h' found at (4,4).
+search: <gh> found.
+search: currPos<right>: (4,5).
+search: ...backtracking: (4,4).
+search: currPos<down>: (5,4).
+search: ...backtracking: (4,4).
+search: currPos<left>: (4,3).
+search: ...backtracking: (4,4).
+search: currPos<up>: (3,4).
+search: up: 'h' found at (3,4).
+search: up: 'v' found at (2,4).
+search: up: 'v' found at (1,4).
+search: <hvv> found.
+search: SUCCESS!: 'the es ss gh hvv' found!
+Phrase Coordinates for: 'the es ss gh hvv'.
+word coordinate: the: <0,0> to <0,2>.
+word coordinate: es: <1,2> to <2,2>.
+word coordinate: ss: <3,2> to <4,2>.
+word coordinate: gh: <4,3> to <4,4>.
+word coordinate: hvv: <3,4> to <1,4>.
+End coordinates.
+Phrase Found Table for: 'the es ss gh hvv':
+
+T H E e s 
+e t E d V 
+g g S d V 
+g h S g H 
+g h S G H 
+
+
+t h e e s 
+e t e d v 
+g g s d v 
+g h s g h 
+g h s g h 
+

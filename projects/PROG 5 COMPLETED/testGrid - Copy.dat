@@ -1,0 +1,10 @@
+Foud a bug in my program:
+use "breaktest.dat" and search for  'the es ss gh hvvs'.
+It should be found but program will say phrase not found.
+See breakoutput.txt to see what occured. 
+Fix: need to somehow add a backtracking feature so that 
+characters from table added to bool table are reset to false 
+any time a word is not found and backtracking to the end of the previous word occurs -
+all of those added positions from a partially found word or from words that are eventually backtracked
+remain occupied (set to true) according to the bool table.
+After resolving this hard-to-find bug then program should have no more bugs.
